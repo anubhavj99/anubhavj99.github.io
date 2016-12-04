@@ -5,15 +5,12 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <link rel="shortcut icon" type="image/png" href="AJ.png">
-	<title>RESUME</title>
+	<title>HOME</title>
 	<style>
-/*html, body 			{ max-width: 100%;
-    				  overflow-x: hidden;
-					}*/
 h2                  { margin : auto;
 					  position: relative; 
 					  top: -350px; 
-					   
+					  left: 10; 
 					  width: 100%; 
 					}
 h2 span.b           { margin-left : 13%;
@@ -21,7 +18,7 @@ h2 span.b           { margin-left : 13%;
 					  border-radius: 10px;
 					  font: bold 80px 'Inknut Antiqua', serif; 
 					  letter-spacing: 1px;                       
-					  background: rgba(222, 20, 120, 0.2); 
+					  background: rgba(45, 165, 245, 0.15); 
 					  padding: 0px 30px 0px 30px; 
 					  text-align: center;
 					  z-index : 1000;					  
@@ -32,107 +29,119 @@ h2 span.a		    { margin-left : 20%;
 					  border-radius: 10px;
 					  font: bold 80px 'Inknut Antiqua', serif; 
 					  letter-spacing: 1px;                       
-					  background-color: rgba(222, 20, 120, 0.2);
+					  background-color: rgba(45, 165, 245, 0.3);
 					  padding: 0px 30px 0px 30px;
 					  text-align : center;
 					  z-index : 1000;					  
 					  box-shadow : 0 4px 8px 0px rgba(0, 0, 0, 0.6), 0px 6px 20px 0px rgba(0, 0, 0, 0.6);
 					}
-/*.nav				{ position: absolute;
-					  width:100%;
-					  height:63px;
-					  background-color: rgba(0, 0, 100, 0.2);
-					  border-radius : 5px;
-					  bottom:3px;
-					  z-index:1000;
-					  border-radius : 10px;
-					}*/
-/*.links				{ position : relative;
-					  margin-left : 200px;
-					  bottom : 1px;
-					  font-size : 50px;
+#sidebar 			{ color: #ffffff;
+    				  border: 1px solid #ffffff;
+    				  border-radius: 4px;
+    				  padding: 10px;
+    				  width: 320px;
+    				  top: 0;
+    				  right: 0;
+    			 	  position: absolute;
+    				  font-size: 80%;
+    				  line-height: 20px;
+					}
+.nav1				{ position: fixed;
+					  width : 100%;
+					  height : 9.1%;
+					  background-color: rgba(0, 0, 0, 0.5);
+					  top : 0px;
+					  z-index : 1000;
+					  border-radius : 0px;
+					  margin-left : -10px;
+					}
+.links				{ position : relative;
+					  margin-left : 16.5%;
+					  bottom : px;
+					  font-size : 310%;
 					  font-family : Calibri Light;
-					  color : rgb(20, 15, 240);
+					  color : rgb(255, 255, 255);
 					  letter-spacing : 0px;
 					  text-decoration : none;	
 					}
-.linksR				{ position : relative;
-					  margin-left : 200px;
-					  bottom : 1px;
+.linksH				{ position : relative;
+					  margin-left : 16.5%;
+					  bottom : 0px;
+					  padding-bottom : 0px;
+					  height : 50px;
+					  background-color: rgba(255, 255, 255, 0.5);
+					  font-size : 310%;
+					  font-family : Calibri Light;
+					  color : rgb(255, 255, 255);
+					  letter-spacing : 0px;
+					  text-decoration : none;	
+					}
+.introbeg			{ text-align : center;
+					  margin-top : 30px;
+					  margin-bottom : 0px;
+					  font-size : 50px;
+					  font-family : 'Quicksand', sans-serif;
+					  color : rgb(91, 155, 213);
+					}
+.introbeglow    	{ text-align : center;
+					  margin-top : -5px;
+					  margin-bottom : 50px;
+					  font-size : 26px;
+					  
+					  font-family : 'Tillana', cursive;
+					  color : rgb(91, 155, 213);
+					}
+/*.menu a:hover		{ position : relative;
+					  margin-left : 16.5%;
+					  bottom : 0px;
 					  padding-bottom : 0px;
 					  height : 51px;
-					  background-color: rgba(0, 0, 100, 0.5);
-					  font-size : 50px;
+					  background-color: rgba(0, 0, 0, 0.5);
+					  font-size : 310%;
 					  font-family : Calibri Light;
-					  color : rgb(120, 120, 120);
+					  color : rgb(255, 255, 255);
 					  letter-spacing : 0px;
-					  text-decoration : none;	
-					}*/
-.cv 				{ position:relative;
-					  width:600px;
-					  height:auto;
-					  margin-top : 100px;
-					  /*margin-right: 500px;*/
-					  margin-left: 400px;
-					}
-.imgdown			{ text-align : justify;
-					  margin-left : 50px;
-					  margin-right : 200px;
-					  color : purple;
-					  margin-right : 50px;
-					  line-height: 40px;
-					  font-family : Javanese Text;
-					  font-style : normal;
-					  font-size : 15px;	
-					}		
-ul.navbar 			{ list-style-type: none;
-    				  margin: 0px 0px 0px -8px;
-    				  padding: 0;
-					  position : fixed;
-    				  overflow : inherit;
-    				  border: 1px solid rgba(0, 0, 0, 0.5);
-    				  background-color: rgba(0, 0, 0, 0.5);
-					  postion : fixed;
-					  width : 101.15%;
-					  z-index : 20000;
-					}
+					  text-decoration : none;
+  					}*/
 .image				{ height : 50px;
 					  width : auto;
 					  margin-top : 10px;	
 					}
-#starttag			{ position : realtive;
-					  background-color : rgba(255, 0, 0, 0.2);
+#nametag			{ position : realtive;
+					  background-color : rgba(50,120,200,0.4);
 					  color : rgb(255, 255, 255);
 					  font-size : 250%;
 					  font-family : 'Amatic SC', cursive;
 					  text-align : center;
-					  padding : 70px 200px;
+					  padding : 200px;
 					  margin-top : 120px;
 					  letter-spacing : 2px;
 					  margin-left : -6px;
 					  width : 71%;
 					}
-#achievetag1		{ position : realtive;
-					  background-color : rgba(255, 0, 0, 0.2);
+#edutag				{ position : realtive;
+					  background-color : rgba(50,120,250,0.6);
 					  color : rgb(255, 255, 255);
 					  font-size : 250%;
 					  font-family : 'Amatic SC', cursive;
 					  text-align : center;
-					  padding : 70px 200px;
-					  margin-top : 120px;
+					  padding : 200px;
+					  margin-top : 50px;
 					  letter-spacing : 2px;
+					  line-height : 130%;
 					  margin-left : -6px;
 					  width : 71%;
 					}
-#achievetag2		{ position : realtive;
-					  background-color : rgba(255, 0, 0, 0.4);
+#exptag				{ position : realtive;
+					  background-color : rgba(20,80,250,0.6);
 					  color : rgb(255, 255, 255);
 					  font-size : 250%;
 					  font-family : 'Amatic SC', cursive;
 					  text-align : center;
-					  padding : 70px 200px;
-					  margin-top : 0px;
+					  padding : 200px;
+					  margin-top : 50px;
 					  letter-spacing : 2px;
+					  line-height : 130%;
 					  margin-left : -6px;
 					  width : 71%;
 					}
@@ -148,6 +157,24 @@ ul.navbar 			{ list-style-type: none;
 					  margin-left : -7px;
 					  margin-bottom : -8px; 	
 					}
+#edutag a:link 		{ text-decoration : none;
+					  color : rgb(91, 155, 213);
+					}
+#edutag a:visited	{ text-decoration : none;
+					  color : rgb(91, 155, 100);
+					}
+ul.navbar 			{ list-style-type: none;
+    				  margin: 0px 0px 0px -8px;
+    				  padding: 0;
+					  position : fixed;
+    				  overflow : inherit;
+    				  border: 1px solid rgba(0, 0, 0, 0.5);
+    				  background-color: rgba(0, 0, 0, 0.5);
+					  postion : fixed;
+					  width : 101.15%;
+					  z-index : 20000;
+					}
+
 li.navbar1 			{ float: left;
 					}
 li.navbar1:first-child { margin-left:10px;
@@ -169,7 +196,7 @@ li.navbar1 a:hover:not(.active), .dropdown:hover .dropbtn {	background-color: rg
 														  }
 
 li.navbar1 a.active { color: white;
-     				  background-color: rgba(222, 0, 0, 0.6);
+     				  background-color: rgba(91, 155, 213, 0.6);
 					}
 
 li.dropdown 		{ display: inline-block;
@@ -209,11 +236,12 @@ li.dropdown 		{ display: inline-block;
 									  }
 	</style>
 </head>
-<body>
+<body style="background-color:rgb(255, 255, 255);">
+<!--menu bar-->
 <div style="position: relative; margin-top: -8px; width: 100%; " class="menu">
 <ul class="navbar">
-	<li class="navbar1"><a href="HOME.html">HOME</a></li>
-	<li class="navbar1"><a  class="active" href="#">RESUME</a></li>
+	<li class="navbar1"><a class="active" href="#">HOME</a></li>
+	<li class="navbar1"><a href="RESUME.html">RESUME</a></li>
 	<li class="dropdown"><a href="ABOUT.html" class="dropbtn">ABOUT</a>
     <div class="dropdown-content">
       <a href="https://anubhavjai.wordpress.com/"><img class="image" src="wordpress.png" alt="https://anubhavjai.wordpress.com/"></a>
@@ -229,33 +257,31 @@ li.dropdown 		{ display: inline-block;
 		
 </ul>
 </div>
-<img src="img3.jpg" style="width : 1349px; height : 510px; opacity : 1; top : -5px; margin-top : -18px; margin-left : -8px; margin-bottom : 0px; z-index : 100;">
+<!--menu bar ends-->
+<!--image and name-->
+<img src="21.jpg" style="width : 1349px; height : 510px; opacity : 1; top : -5px; margin-top : -18px; margin-left : -8px; margin-bottom : 0px; z-index : 100;">
 <h2><span class="b">अनुभव</span><span class="a">जायसवाल</span></h2>
-<!--<div style="position: relative; margin-bottom: 20px; width: 100%; ">
-<img src="img3.jpg" style="width : 1330px; height : 500px;border-radius: 10px;">
-<h2><span>ANUBHAV</span><span class="a">JAISWAL</span></h2>
-<div class="nav"><a class="links" href="HOME.html">HOME</a><a class="linksR" href="RESUME.html">RESUME</a><a class="links" href="ABOUT.html">ABOUT</a></div>
-</div>-->
-<!--<div style="position: relative; margin-bottom: 20px; width: 100%; ">
-</div>-->
-</br>
-<!--starttag-->
-<p id="starttag"> Welcome to the kingdom of my achievments!</br></br> Let's start...</p>
+<!--image and names end-->
+<!--<div style="position: relative; margin-bottom: 5px; width: 100%; " class="menu">
+<div class="nav"><div style="postion:fixed;"><a class="linksH" href="HOME.html">HOME</a><a class="links" href="RESUME.html">RESUME</a>
+<a class="links" href="ABOUT.html">ABOUT</a></div>
+</div></div>-->
 
-<!--Resume image-->
-<img src="CV1.jpg" alt="Resume" class="cv">
-<!--achievetags-->
-<p id="achievetag1">First, I fell in love with mathematics after the introduction of calculus</br></br>
-<img src="calculus.png" alt="calculus" style="align:center;width:auto;height:auto;"></p>
-<p id="achievetag2">Second, Sports.</br> Cricket is the fisrt sport every Indian child has played.&nbsp &nbsp NOQUESTIONS TO THAT! &nbsp &nbsp
-<img src="cricket.png" alt="cricket" style="align:center;width:auto;height:100px;"></br></br></br>
-I also played tennis for 3+ years, and state level for another half!<img src="tennis.png" alt="calculus" style="align:center;width:auto;height:100px;float:right;"></br></br></br></br>
-Also I'm a great fan of Michael Schumacher, 
-since the time I learned driving at the age of 12, and drag racing at 15!<img src="racing-flame.png" alt="racing-flame" style="align:center;width:auto;height:100px;float:right;"></p>
+<!--Intro heading-->
+<p class="introbeg">LET's BEGIN!</p>
+<p class="introbeglow">क्योंकि शुरुआत अच्छी हो तो सब अच्छा होता है...</p>
+<!--nametag-->
+<p id="nametag"> My name is Anubhav Jaiswal, (as if you didn't get it by the big ass header OR you don't know hindi...).</p>
+<!--edutag-->
+<p id="edutag">Next, my schooling started in Airforce Bal Bharti School. I was transferred to Father Agnel and lastly to The Mother's International School.</br>
+Finally, in the year 2016, I got myself admitted in IIITD (<i>Indraprastha Institute of Information Technology, Delhi</i>), AND this AIN'T IP!!</p>
+<!--exptag-->
+<p id="exptag">Experience...</br>umm...aaa...ummm</br> Actually, no! I don't have any of it till date.</br>
+But I would surely like to be a part of something great!</p>
 
-</br></br></br></br></br></br></br>
-<p class="imgdown">Impressed!&emsp; Want to Download my CV?&emsp;&emsp;&emsp;&emsp;It's just an image! Go on and save it as you usually do with the images...</p>
+
 <!--endtag-->
 <p id="endtag"> Handcrafted with <i class="fa fa-heart" style="font-size : 22px;"></i> in India</p>
+
 </body>
 </html>
