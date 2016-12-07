@@ -2,41 +2,46 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=0.1">
 <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua|Tillana|Aref+Ruqaa|Indie+Flower|Quicksand|Shadows+Into+Light|Amatic+SC|Orbitron" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <link rel="shortcut icon" type="image/png" href="AJ.png">
 	<title>HOME</title>
 	<style>
-h2                  { margin : auto;
-					  position: relative; 
-					  top: -350px; 
-					  left: 10; 
+body {
+	overflow-x : hidden;
+	background-color : #fff;
+}
+* {
+	box-sizing : border-box;
+}
+
+h2                  { position: absolute; 
+					  top: 10vw;  
 					  width: 100%; 
 					}
-h2 span             { margin-left : 13%;
+h2 span.b           { margin-left : 9vw;
 					  color: rgb(255, 255, 255); 
-					  border-radius: 10px;
-					  font: bold 80px/0px 'Inknut Antiqua', serif; 
-					  letter-spacing: 1px;  
-                      background: rgb(0, 0, 0); 
-					  background: rgba(46, 165, 245, 0.15); 
-					  padding: 70px 30px 70px 30px; 
+					  border-radius: 1.4vw;
+					  font: bold 6vw 'Inknut Antiqua', serif; 
+					  letter-spacing: 1px;                       
+					  background: rgba(45, 165, 245, 0.15); 
+					  padding: 0vw 3.125vw 0vw 3.125vw; 
 					  text-align: center;
-					  z-index : 1000;
-					  position : absolute;						  			   
+					  z-index : 1000;					  
+					  box-shadow : 0 4px 8px 0px rgba(0, 0, 0, 0.3), 0px 6px 20px 0px rgba(0, 0, 0, 0.3);						  			   
 					}
-h2 span.a		    { margin-left : 55%;
-					  color: white; 
-					  border-radius: 10px;
-					  font: bold 80px/0px 'Inknut Antiqua', serif; 
-					  letter-spacing: 1px;  
-                      background: rgb(0, 0, 0); 
-					  background: rgba(46, 165, 245, 0.3);
-					  padding: 70px 30px 70px 30px;
+h2 span.a		    { margin-left : 16vw;
+					  color: rgb(255, 255, 255); 
+					  border-radius: 1.4vw;
+					  font: bold 6vw 'Inknut Antiqua', serif; 
+					  letter-spacing: 1px;                       
+					  background-color: rgba(45, 165, 245, 0.3);
+					  padding: 0px 3.125vw 0px 3.125vw;
 					  text-align : center;
-					  z-index : 1000;
-					  postion : absolute;
+					  z-index : 1000;					  
+					  box-shadow : 0 0.55vw 1.1vw 0px rgba(0, 0, 0, 0.6), 0px 0.825vw 2.75vw 0px rgba(0, 0, 0, 0.6);
 					}
 #sidebar 			{ color: #ffffff;
     				  border: 1px solid #ffffff;
@@ -119,8 +124,8 @@ h2 span.a		    { margin-left : 55%;
 					  padding : 200px;
 					  margin-top : 120px;
 					  letter-spacing : 2px;
-					  margin-left : -6px;
-					  width : 71%;
+					  margin-left : -7px;
+					  width : 100vw;
 					}
 #edutag				{ position : realtive;
 					  background-color : rgba(50,120,250,0.6);
@@ -132,8 +137,9 @@ h2 span.a		    { margin-left : 55%;
 					  margin-top : 50px;
 					  letter-spacing : 2px;
 					  line-height : 130%;
-					  margin-left : -6px;
-					  width : 71%;
+					  margin-left : -7px;
+					  width : 100vw;
+					  
 					}
 #exptag				{ position : realtive;
 					  background-color : rgba(20,80,250,0.6);
@@ -145,8 +151,8 @@ h2 span.a		    { margin-left : 55%;
 					  margin-top : 50px;
 					  letter-spacing : 2px;
 					  line-height : 130%;
-					  margin-left : -6px;
-					  width : 71%;
+					  margin-left : -7px;
+					  width : 100vw;
 					}
 #endtag				{ position : absolute;
 					  background-color : rgba(0, 0, 0, 1);
@@ -155,10 +161,11 @@ h2 span.a		    { margin-left : 55%;
 					  font-family : 'Orbitron', sans-serif;
 					  text-align : center;
 					  padding : 20px;
-					  letter-spacing : 2px;
-					  width : 96.9%;
-					  margin-left : -7px;
-					  margin-bottom : -8px; 	
+					  letter-spacing : 4px;
+					  width : 100%;
+					  margin-left : -10px;
+					  margin-bottom : -8px;
+					  box-sizing : border-box; 	
 					}
 #edutag a:link 		{ text-decoration : none;
 					  color : rgb(91, 155, 213);
@@ -174,7 +181,7 @@ ul.navbar 			{ list-style-type: none;
     				  border: 1px solid rgba(0, 0, 0, 0.5);
     				  background-color: rgba(0, 0, 0, 0.5);
 					  postion : fixed;
-					  width : 101.15%;
+					  width : 100%;
 					  z-index : 20000;
 					}
 
@@ -189,7 +196,8 @@ li.navbar1 a, .dropbtn { display: block;
 						 font-size : 200%;
 						 font-family: 'Quicksand', sans-serif;
     					 padding: 18px 22px;
-    					 text-decoration: none;	
+    					 text-decoration: none;
+						 cursor : pointer;	
 					   }
 
 li.navbar1 a:hover:not(.active), .dropdown:hover .dropbtn {	background-color: rgba(0, 0, 0, 0.5);
@@ -222,7 +230,7 @@ li.dropdown 		{ display: inline-block;
     				  display: block;
     				  text-align: left;
 					  z-index : 20000;
-					  height : 30%;
+					  height : 6vw;
 					}	
 
 .dropdown-content a:hover { background-color: rgba(255, 255, 255, 1);
@@ -232,20 +240,19 @@ li.dropdown 		{ display: inline-block;
 									opacity : 1;
 								  }
 
-@media screen and (max-width: 5000px) {
- 			   ul.navbar li.navbar1 a { text-align: center;
-        								float: none;
-    								  }
-									  }
+@media screen and (max-width: 500px) {
+ 			  .dropdown-content a 	 { height : 20vw;
+    								 }
+									 }
 	</style>
 </head>
-<body style="background-color:rgb(255, 255, 255);">
+<body>
 <!--menu bar-->
 <div style="position: relative; margin-top: -8px; width: 100%; " class="menu">
 <ul class="navbar">
 	<li class="navbar1"><a class="active" href="#">HOME</a></li>
 	<li class="navbar1"><a href="RESUME.html">RESUME</a></li>
-	<li class="dropdown"><a href="ABOUT.html" class="dropbtn">ABOUT</a>
+	<li class="dropdown"><a class="dropbtn">ABOUT</a>
     <div class="dropdown-content">
       <a href="https://anubhavjai.wordpress.com/"><img class="image" src="wordpress.png" alt="https://anubhavjai.wordpress.com/"></a>
       <a href="https://www.facebook.com/anubhavjaiswal786"><img class="image" src="fb.png" alt="https://www.facebook.com/anubhavjaiswal786"></a>
@@ -257,13 +264,13 @@ li.dropdown 		{ display: inline-block;
   </li>
 	<!--<li class="navbar1"><a href="ABOUT.html">ABOUT</a></li>-->
 	<li class="navbar1"><a href="#">GALLERY</a></li>
-	
+		
 </ul>
 </div>
 <!--menu bar ends-->
 <!--image and name-->
-<img src="21.jpg" style="width : 1349px; height : 510px; opacity : 1; top : -5px; margin-top : -18px; margin-left : -8px; margin-bottom : 0px; z-index : 100;">
-<h2><span>अनुभव</span><span class="a">जायसवाल</span></h2>
+<img src="21.jpg" style="width : 101.2%; height : auto; opacity : 1; top : -5px; margin-top : -18px; margin-left : -8px; margin-bottom : 0px; z-index : 100;">
+<h2><span class="b">अनुभव</span><span class="a">जायसवाल</span></h2>
 <!--image and names end-->
 <!--<div style="position: relative; margin-bottom: 5px; width: 100%; " class="menu">
 <div class="nav"><div style="postion:fixed;"><a class="linksH" href="HOME.html">HOME</a><a class="links" href="RESUME.html">RESUME</a>
@@ -274,6 +281,7 @@ li.dropdown 		{ display: inline-block;
 <p class="introbeg">LET's BEGIN!</p>
 <p class="introbeglow">क्योंकि शुरुआत अच्छी हो तो सब अच्छा होता है...</p>
 <!--nametag-->
+<div style="box-sizing:border-box;"></div>
 <p id="nametag"> My name is Anubhav Jaiswal, (as if you didn't get it by the big ass header OR you don't know hindi...).</p>
 <!--edutag-->
 <p id="edutag">Next, my schooling started in Airforce Bal Bharti School. I was transferred to Father Agnel and lastly to The Mother's International School.</br>
@@ -285,6 +293,6 @@ But I would surely like to be a part of something great!</p>
 
 <!--endtag-->
 <p id="endtag"> Handcrafted with <i class="fa fa-heart" style="font-size : 22px;"></i> in India</p>
-
+</div>
 </body>
 </html>
