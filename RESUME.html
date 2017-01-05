@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua|Tillana|Aref+Ruqaa|Indie+Flower|Quicksand|Shadows+Into+Light|Amatic+SC|Orbitron" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua|Tillana|Aref+Ruqaa|Indie+Flower|Quicksand|Shadows+Into+Light|Amatic+SC|Orbitron|Caveat|Alegreya" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <link rel="shortcut icon" type="image/png" href="AJ.png">
@@ -71,19 +71,15 @@ h2 span.a		    { margin-left : 20%;
 .cv 				{ position:relative;
 					  width:600px;
 					  height:auto;
-					  margin-top : 100px;
+					  margin-top : 0px;
 					  /*margin-right: 500px;*/
 					  margin-left: 400px;
 					}
-.imgdown			{ text-align : justify;
-					  margin-left : 50px;
-					  margin-right : 200px;
-					  color : purple;
-					  margin-right : 50px;
-					  line-height: 40px;
-					  font-family : Javanese Text;
-					  font-style : normal;
-					  font-size : 15px;	
+.imgdown			{ text-align : center;
+					  color : rgba(255, 0, 0, 0.8);
+					  font-family: 'Quicksand', sans-serif;
+					  font-size : 3em;	
+					  letter-spacing: 2px;
 					}		
 ul.navbar 			{ list-style-type: none;
     				  margin: 0px 0px 0px -8px;
@@ -100,31 +96,31 @@ ul.navbar 			{ list-style-type: none;
 					  width : auto;
 					  margin-top : 10px;	
 					}
-#starttag			{ position : realtive;
+#starttag			{ position : relative;
 					  background-color : rgba(255, 0, 0, 0.2);
 					  color : rgb(255, 255, 255);
 					  font-size : 250%;
 					  font-family : 'Amatic SC', cursive;
 					  text-align : center;
 					  padding : 70px 200px;
-					  margin-top : 120px;
+					  margin : -30px 0px 0px;
 					  letter-spacing : 2px;
 					  margin-left : -6px;
 					  width : 71%;
 					}
-#achievetag1		{ position : realtive;
+#achievetag1		{ position : relative;
 					  background-color : rgba(255, 0, 0, 0.2);
 					  color : rgb(255, 255, 255);
 					  font-size : 250%;
 					  font-family : 'Amatic SC', cursive;
 					  text-align : center;
 					  padding : 70px 200px;
-					  margin-top : 120px;
+					  margin-top: 0px;
 					  letter-spacing : 2px;
 					  margin-left : -6px;
 					  width : 71%;
 					}
-#achievetag2		{ position : realtive;
+#achievetag2		{ position : relative;
 					  background-color : rgba(255, 0, 0, 0.4);
 					  color : rgb(255, 255, 255);
 					  font-size : 250%;
@@ -135,6 +131,7 @@ ul.navbar 			{ list-style-type: none;
 					  letter-spacing : 2px;
 					  margin-left : -6px;
 					  width : 71%;
+					  margin-bottom: -40px;
 					}
 #endtag				{ position : absolute;
 					  background-color : rgba(0, 0, 0, 1);
@@ -168,7 +165,7 @@ li.navbar1 a:hover:not(.active), .dropdown:hover .dropbtn {	background-color: rg
 															border-color : rgb(255, 255, 255)*/
 														  }
 
-li.navbar1 a.active { color: white;
+li.navbar1 a.active, li.dropdown a.active{ color: white;
      				  background-color: rgba(222, 0, 0, 0.6);
 					}
 
@@ -183,6 +180,13 @@ li.dropdown 		{ display: inline-block;
 					  opacity: 0;
     				  transition: opacity 1s;
 					}
+.dropdown-content img.cv1 { width:100%;
+					    height:auto;
+					    margin-top : 0px;
+					    padding: 0px;
+					    opacity : 0.6;
+					    /*margin-right: 500px;*/
+					  }
 
 .dropdown-content a { color: rgb(91,155,213);
 					  font-size : 160%;
@@ -207,13 +211,79 @@ li.dropdown 		{ display: inline-block;
         								float: none;
     								  }
 									  }
+
+.downbutton { padding: 1.5% 3%;
+    		  text-align: center;
+    		  text-decoration: none;
+    		  display: inline-block;
+    		  font-size: 16px;
+    		  margin: 4px 2px;
+              -webkit-transition-duration: 0.4s; /* Safari */
+    		  transition-duration: 0.4s;
+    		  cursor: pointer;
+    		  background-color: white;  
+    		  border: 4px solid rgba(255, 0, 0, 0.7);
+    		  border-radius: 5px;
+    		  margin-left: 40%;
+    		  font-family: 'Shadows Into Light', cursive;
+    		  color : rgb(0, 0, 0);
+			  font-size : 40px;
+			  letter-spacing: 4px;
+			  display : inline-block;
+			  position : relative;
+			}
+
+.downbutton:hover { background-color: rgba(255, 0, 0, 0.8);
+					color : rgb(255, 255, 255);
+				  }
+
+a.download  { text-decoration: none;
+			  color : inherit;
+			}
+
+.downbutton .tooltiptext {
+   visibility: hidden;
+    width: 120px;
+    background-color: rgba(50, 50, 50, 0.8);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 110%;
+    opacity:0;
+    transition : opacity 1s;
+    font-family: 'Alegreya', serif;
+    font-size: 10px;
+}
+
+.downbutton .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent rgba(50, 50, 50, 0.8);
+    
+}
+
+.downbutton:hover .tooltiptext { visibility: visible;
+    							 opacity : 1;
+							   }
+
 	</style>
+
 </head>
 <body>
 <div style="position: relative; margin-top: -8px; width: 100%; " class="menu">
 <ul class="navbar">
 	<li class="navbar1"><a href="index.html">HOME</a></li>
 	<li class="navbar1"><a  class="active" href="#">RESUME</a></li>
+	<li class="dropdown"><a href="#" class="dropbtn">GALLERY</a></li>
 	<li class="dropdown"><a href="ABOUT.html" class="dropbtn">ABOUT</a>
     <div class="dropdown-content">
       <a href="https://anubhavjai.wordpress.com/"><img class="image" src="wordpress.png" alt="https://anubhavjai.wordpress.com/"></a>
@@ -225,11 +295,10 @@ li.dropdown 		{ display: inline-block;
     </div>
   </li>
 	<!--<li class="navbar1"><a href="ABOUT.html">ABOUT</a></li>-->
-	<li class="navbar1"><a href="#">GALLERY</a></li>
 		
 </ul>
 </div>
-<img src="img3.jpg" style="width : 1349px; height : 510px; opacity : 1; top : -5px; margin-top : -18px; margin-left : -8px; margin-bottom : 0px; z-index : 100;">
+<img src="img3.jpg" style="width : 1349px; height : 510px; opacity : 1; top : -5px; margin-top : -18px; margin-left : -8px;  z-index : 100;">
 <h2><span class="b">अनुभव</span><span class="a">जायसवाल</span></h2>
 <!--<div style="position: relative; margin-bottom: 20px; width: 100%; ">
 <img src="img3.jpg" style="width : 1330px; height : 500px;border-radius: 10px;">
@@ -238,12 +307,9 @@ li.dropdown 		{ display: inline-block;
 </div>-->
 <!--<div style="position: relative; margin-bottom: 20px; width: 100%; ">
 </div>-->
-</br>
 <!--starttag-->
 <p id="starttag"> Welcome to the kingdom of my achievments!</br></br> Let's start...</p>
 
-<!--Resume image-->
-<img src="CV1.jpg" alt="Resume" class="cv">
 <!--achievetags-->
 <p id="achievetag1">First, I fell in love with mathematics after the introduction of calculus</br></br>
 <img src="calculus.png" alt="calculus" style="align:center;width:auto;height:auto;"></p>
@@ -254,7 +320,11 @@ Also I'm a great fan of Michael Schumacher,
 since the time I learned driving at the age of 12, and drag racing at 15!<img src="racing-flame.png" alt="racing-flame" style="align:center;width:auto;height:100px;float:right;"></p>
 
 </br></br></br></br></br></br></br>
-<p class="imgdown">Impressed!&emsp; Want to Download my CV?&emsp;&emsp;&emsp;&emsp;It's just an image! Go on and save it as you usually do with the images...</p>
+
+<p class="imgdown">Impressed!&emsp;</br>Take my Curriculum Vitaè down</p>
+</br></br></br>
+
+<button class="downbutton"><a href="CV.pdf" class="download" download>Download</a><span class="tooltiptext">DOWNLOADS</br>MY C.V.</span></button>
 <!--endtag-->
 <p id="endtag"> Handcrafted with <i class="fa fa-heart" style="font-size : 22px;"></i> in India</p>
 </body>
