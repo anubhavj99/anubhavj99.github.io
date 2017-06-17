@@ -7,7 +7,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <link rel="shortcut icon" type="image/png" href="AJ.png">
 	<title>HOME</title>
+<!--
 	<style>
+		
 body {
 	overflow-x : hidden;
 	background-color : #fff;
@@ -261,9 +263,56 @@ li.dropdown 		{ display: inline-block;
     		}
 }
 	</style>
+-->
+	<style>
+		@background-color: #4684ee;
+@loader-color: #fff;
+@loader-size: 30vh;
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;  
+}
+
+body {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  background-color: @background-color;
+}
+
+.loader {
+  color: #fff;
+  
+  font-family: Consolas, Menlo, Monaco, monospace;
+  font-weight: bold;
+  font-size: @loader-size;
+  
+  opacity: 0.8;
+
+  span {
+    display: inline-block;
+    animation: pulse 0.4s alternate infinite ease-in-out;
+
+    &:nth-child(odd) {
+      animation-delay: 0.4s;
+    }
+  }
+}
+
+@keyframes pulse {
+  to {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+}
+	</style>
 </head>
+
 <body>
-<!--menu bar-->
+<!--menu bar
 <div style="position: relative; margin-top: -8px; width: 100%; " class="menu">
 <ul class="navbar">
 	<li class="navbar1"><a class="active" href="#">HOME</a></li>
@@ -283,12 +332,12 @@ li.dropdown 		{ display: inline-block;
 	  <a target="_blank" href="https://www.iiitd.ac.in/"><i class="material-icons" style="font-size : 48px;color : rgb(0, 0, 0)">school</i></a>
     </div>
   </li>
-	<!--<li class="navbar1"><a href="ABOUT.html">ABOUT</a></li>-->
+	<!--<li class="navbar1"><a href="ABOUT.html">ABOUT</a></li>
 		
 </ul>
 </div>
-<!--menu bar ends-->
-<!--image and name-->
+<!--menu bar ends
+<!--image and name
 <img src="img/21.jpg" style="width : 101.2%; height : auto; opacity : 1; top : -5px; margin-top : -18px; margin-left : -8px; margin-bottom : 0px; z-index : 100;">
 <h2><span class="b">अनुभव</span><span class="a">जायसवाल</span></h2>
 <!--image and names end-->
@@ -297,22 +346,26 @@ li.dropdown 		{ display: inline-block;
 <a class="links" href="ABOUT.html">ABOUT</a></div>
 </div></div>-->
 
-<!--Intro heading-->
+<!--Intro heading
 <p class="introbeg">LET's BEGIN!</p>
 <p class="introbeglow">क्योंकि शुरुआत अच्छी हो तो सब अच्छा होता है...</p>
-<!--nametag-->
+<!--nametag
 <div style="box-sizing:border-box;"></div>
 <p class="nametag tags"> My name is Anubhav Jaiswal, (as if you didn't get it by the big ass header</br></br>OR may be you don't know hindi...).</p>
-<!--edutag-->
+<!--edutag
 <p class="edutag tags">Next, my schooling started in Airforce Bal Bharti School. I was transferred to Father Agnel and lastly to The Mother's International School.</br>
 Finally, in the year 2016, I got myself admitted in IIITD (<i>Indraprastha Institute of Information Technology, Delhi</i>), AND this AIN'T IP!!</p>
-<!--exptag-->
+<!--exptag
 <p class="exptag tags">Experience...</br>umm...aaa...ummm</br> Actually, no! I don't have any of it till date.</br>
 But I would surely like to be a part of something great!</p>
 
 
-<!--endtag-->
+<!--endtag
 <p class="endtag"> Handcrafted with <i class="fa fa-heart" style="font-size : 22px;"></i> in India</p>
+</div>
+-->
+<div class="loader">
+  <span>{</span><span>}</span>
 </div>
 </body>
 </html>
