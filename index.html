@@ -26,8 +26,10 @@
 </body>
 	<script type="text/javascript">
 		(function(event){
-			document.querySelector('.loaderHolder').remove();
-			document.querySelector('#mainPageContent').setAttribute('style', 'display: block');
+			window.setTimeout(function(){
+				document.querySelector('.loaderHolder').remove();
+				document.querySelector('#mainPageContent').setAttribute('style', 'display: block');
+			}, 2000);
 		})();
 	</script>
 </html>
