@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=0.1">
-<link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua|Tillana|Aref+Ruqaa|Indie+Flower|Quicksand|Shadows+Into+Light|Amatic+SC|Orbitron" rel="stylesheet">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-<link rel="shortcut icon" type="image/png" href="img/AJ.png">
+	<meta name="viewport" content="width=device-width, initial-scale=0.1">
+	<link rel="shortcut icon" type="image/png" href="img/AJ.png">
 	<title>HOME</title>
+	
+	<!-- bootstrap start  -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- bootstrap end -->
+    <!-- fontawesome icons -->
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- fontawesome icons end -->
+
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+	<style type="text/css">
+		body {
+			font-family: 'Poppins', sans-serif;
+    		background: #f1f3f6;
+		}
+		.noselect {
+		  -webkit-touch-callout: none; /* iOS Safari */
+		    -webkit-user-select: none; /* Safari */
+		     -khtml-user-select: none; /* Konqueror HTML */
+		       -moz-user-select: none; /* Firefox */
+		        -ms-user-select: none; /* Internet Explorer/Edge */
+		            user-select: none; /* Non-prefixed version, currently
+		                                  supported by Chrome and Opera */
+		}
+
+		/*slight change of padding in the bootstrap file*/
+		.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2,
+		.col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7,
+		.col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, 
+		.col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, 
+		.col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, 
+		.col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, 
+		.col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, 
+		.col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, 
+		.col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, 
+		.col-xs-7, .col-xs-8, .col-xs-9 {
+		    padding: 0;
+		}
+
+		.row {
+		    margin: 0;
+		}
+
+		.inlineDisplay {
+		    display: inline-block !important;
+		}
+	</style>
+
 <body>
 	<link rel="stylesheet" type="text/css" href="css/dotLoader.css">
 	<div class="loaderHolder">
@@ -17,10 +63,123 @@
 		#mainPageContent {
 			display: none;
 		}
+		.navbar-homepage {
+			background: #fff;
+			box-shadow: 0 2px 3px 0 #ddd;
+			border-radius: 0;
+			padding: 0 20px;
+		}
+		.navbar-brand {
+			font-weight: 600;
+			letter-spacing: 0.1px;
+			font-size: 25px !important;
+		}
+		.navbar-homepage a {
+			color: #777;
+			font-weight: 500;
+			font-size: 16px;
+		}
 	</style>
 
 	<div id="mainPageContent">
+		<nav class="navbar navbar-fixed-top navbar-homepage">
+			<div class="container-fluid">
+				<div class="navbar-header">
+				  	<a class="navbar-brand">ANUBHAV JAISWAL</a>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">RESUME</a></li>
+				</ul>
+			</div>
+		</nav>
 
+		<style type="text/css">
+			.pageContent {
+				padding: 20px;
+				margin-top: 60px;
+			}
+			.colPaddings {
+				padding: 15px;
+			}
+			.leftSideProfile {
+				box-shadow: 1px 1px 3px 0 #ddd;
+				background: #fff;
+			}
+			.rightElaborateProfile {
+				padding: 20px;
+				box-shadow: 1px 1px 3px 0 #ddd;
+				background: #fff;
+			}
+			.sideProfileImageDiv {
+				width: 100%;
+			}
+			.sideProfileImage {
+				width: calc(100%);
+			}
+			.sideProfileImageDiv >div::after {
+				content: "ANUBHAV JAISWAL";
+				position: absolute;
+				top: 380px;
+				left: 15px;
+				width: calc(100% - 30px);
+				padding: 2% 10%;
+				background: #fff;
+				color: #000;
+				font-size: 25px;
+			}
+			.sideProfileInfo {
+				padding: 20px;
+			}
+			.sideProfileInfo-part {
+				width: 100%;
+				padding: 5px;
+			}
+			.sideProfileInfo-icon {
+				font-size: 20px;
+			}
+			.sideProfileInfo-written {
+				font-size: 15px;
+				padding-left: 15px;
+				color: #757575;
+			}
+			.sideProfileInfo-icon {
+				color: #0079ff;
+			}
+		</style>
+
+		<div class="pageContent">
+			<div class="row">
+				<div class="col-sm-4 col-xs-12">
+					<div class="colPaddings">
+						<div class="leftSideProfile">
+							<div class="sideProfileImageDiv">
+								<div>
+									<img class="sideProfileImage" src="img/myphoto.jpg" alt="">
+								</div>
+							</div>
+							<div class="sideProfileInfo">
+								<div class="sideProfileInfo-part">
+									<div class="row">
+										<div class="col-sm-1 col-xs-11">
+											<span class="fa fa-briefcase sideProfileInfo-icon" aria-hidden="true"></span>
+										</div>
+										<div class="col-sm-11 col-xs-11">
+											<span class="sideProfileInfo-written">Full Stack Developer</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-8 col-xs-12">
+					<div class="colPaddings">
+						<div class="rightElaborateProfile">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 </body>
@@ -29,7 +188,7 @@
 			window.setTimeout(function(){
 				document.querySelector('.loaderHolder').remove();
 				document.querySelector('#mainPageContent').setAttribute('style', 'display: block');
-			}, 2000);
+			}, 0);
 		})();
 	</script>
 </html>
