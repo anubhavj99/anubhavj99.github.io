@@ -12,6 +12,22 @@
 	<div class="loaderHolder">
 		<div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
 	</div>
+	
+	<style type="text/css">
+		#mainPageContent {
+			display: none;
+		}
+	</style>
+
+	<div id="mainPageContent">
+
+	</div>
 
 </body>
+	<script type="text/javascript">
+		(function(event){
+			document.querySelector('.loaderHolder').remove();
+			document.querySelector('#mainPageContent').setAttribute('style', 'display: block');
+		})();
+	</script>
 </html>
