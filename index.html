@@ -3,6 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=0.1">
 	<link rel="shortcut icon" type="image/png" href="img/AJ.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>HOME</title>
 	
 	<!-- bootstrap start  -->
@@ -51,6 +52,33 @@
 		.inlineDisplay {
 		    display: inline-block !important;
 		}
+
+		@media (max-width: 767px) {
+    
+		    .only-display-less-767-inline {
+		        display: inline-block;
+		    }
+		    .only-display-greater-767 {
+		        display: none;
+		    }
+		    .only-display-less-767 {
+		        display: block;
+		    }
+
+		}
+		@media (min-width: 768px) {
+    
+		    .only-display-less-767-inline {
+		        display: none;
+		    }
+		    .only-display-greater-767 {
+		        display: block;
+		    }
+		    .only-display-less-767 {
+		        display: none;
+		    }
+
+		}
 	</style>
 
 <body>
@@ -87,7 +115,7 @@
 				<div class="navbar-header">
 				  	<a class="navbar-brand">ANUBHAV JAISWAL</a>
 				</div>
-				<ul class="nav navbar-nav navbar-right">
+				<ul class="nav navbar-nav navbar-right only-display-greater-767">
 					<li><a href="#">RESUME</a></li>
 				</ul>
 			</div>
@@ -102,43 +130,57 @@
 				padding: 15px;
 			}
 			.leftSideProfile {
-				box-shadow: 1px 1px 3px 0 #ddd;
+				box-shadow: 1px 1px 5px 1px #bbb;
 				background: #fff;
 			}
 			.rightElaborateProfile {
 				padding: 20px;
-				box-shadow: 1px 1px 3px 0 #ddd;
+				box-shadow: 1px 1px 5px 1px #bbb;
 				background: #fff;
 			}
 			.sideProfileImageDiv {
 				width: 100%;
+				position: relative;
 			}
 			.sideProfileImage {
-				width: calc(100%);
+				width: 100%;
+				height: auto;
 			}
-			.sideProfileImageDiv >div::after {
-				content: "ANUBHAV JAISWAL";
+			.sideProfileImageDiv > div > div {
 				position: absolute;
-				top: 380px;
-				left: 15px;
-				width: calc(100% - 30px);
+				bottom: 5%;
+				left: 0;
+				width: 100%;
 				padding: 2% 10%;
 				background: #fff;
 				color: #000;
-				font-size: 25px;
+				font-size: 18px;
 			}
 			.sideProfileInfo {
 				padding: 20px;
 			}
 			.sideProfileInfo-part {
 				width: 100%;
-				padding: 5px;
+				padding: 10px 5px;
+				border-bottom: 1px solid #ddd;
+			}
+			.sideProfileInfo-part-heading {
+				padding: 5px 0 10px 0;
+			}
+			.sideProfileInfo-part-heading .sideProfileInfo-written {
+				font-size: 20px !important;
 			}
 			.sideProfileInfo-part-each {
 				padding: 5px 0;
 			}
 			.sideProfileInfo-icon {
 				font-size: 20px;
+			}
+			.sideProfileInfo-icon-written {
+				font-size: 16px;
+				padding: 10px 0 16px 0;
+				text-align: left;
+				color: #0079ff;
 			}
 			.sideProfileInfo-written {
 				padding-left: 15px;
@@ -151,6 +193,30 @@
 			.sideProfileInfo-icon {
 				color: #0079ff;
 			}
+			.sideProfileInfo-percentage-bar {
+				width: 100%;
+				border-radius: 10px;
+				height: 20px;
+				background: #e0e0e0;
+			}
+			.sideProfileInfo-percentage-bar div {
+				background: #0079ff;
+				border-radius: 10px;
+				height: 20px;
+				text-align: center;
+				font-size: 12px;
+				line-height: 20px;
+				color: #fff;
+			}
+
+			@media (max-width: 767px) {
+				.pageContent {
+					padding: 0;
+				}
+				.colPaddings {
+					padding: 10px 5px;
+				}
+			}
 		</style>
 
 		<div class="pageContent">
@@ -160,13 +226,16 @@
 						<div class="leftSideProfile">
 							<div class="sideProfileImageDiv">
 								<div>
-									<img class="sideProfileImage" src="img/myphoto.jpg" alt="">
+									<img class="sideProfileImage" src="img/myphoto.jpg" alt="ANUBHAV JAISWAL" id="selfImage">
+									<div>
+										ANUBHAV JAISWAL
+									</div>
 								</div>
 							</div>
 							<div class="sideProfileInfo">
 								<div class="sideProfileInfo-part">
 									<div class="row sideProfileInfo-part-each">
-										<div class="col-sm-1 col-xs-11">
+										<div class="col-sm-1 col-xs-1">
 											<span class="fa fa-briefcase sideProfileInfo-icon" aria-hidden="true"></span>
 										</div>
 										<div class="col-sm-11 col-xs-11">
@@ -174,19 +243,93 @@
 										</div>
 									</div>
 									<div class="row sideProfileInfo-part-each">
-										<div class="col-sm-1 col-xs-11">
+										<div class="col-sm-1 col-xs-1">
+											<span class="fa fa-envelope sideProfileInfo-icon" aria-hidden="true"></span>
+										</div>
+										<div class="col-sm-11 col-xs-11">
+											<span class="sideProfileInfo-written"><a href="mailto:anubhav@thegib.in">anubhav@thegib.in</a></span>
+										</div>
+									</div>
+									<div class="row sideProfileInfo-part-each">
+										<div class="col-sm-1 col-xs-1">
+											<span class="fa fa-phone sideProfileInfo-icon" aria-hidden="true"></span>
+										</div>
+										<div class="col-sm-11 col-xs-11">
+											<span class="sideProfileInfo-written"><a href="tel:+919899325122">+91 989-932-5122</a></span>
+										</div>
+									</div>
+									<div class="row sideProfileInfo-part-each">
+										<div class="col-sm-1 col-xs-1">
 											<span class="fa fa-home sideProfileInfo-icon" aria-hidden="true"></span>
 										</div>
 										<div class="col-sm-11 col-xs-11">
 											<span class="sideProfileInfo-written">New Delhi, India</span>
 										</div>
 									</div>
-									<div class="row sideProfileInfo-part-each">
-										<div class="col-sm-1 col-xs-11">
-											<span class="fa fa-envelope sideProfileInfo-icon" aria-hidden="true"></span>
+								</div>
+								<div class="sideProfileInfo-part">
+									<div class="row sideProfileInfo-part-heading">
+										<div class="col-sm-1 col-xs-1">
+											<span class="fa fa-star sideProfileInfo-icon" aria-hidden="true"></span>
 										</div>
 										<div class="col-sm-11 col-xs-11">
-											<span class="sideProfileInfo-written"><a href="mailto:anubhav@thegib.in">anubhav@thegib.in</a></span>
+											<div class="sideProfileInfo-written">Skills</div>
+										</div>
+									</div>
+									<div class="row sideProfileInfo-part-each">
+										<div class="col-sm-12 col-xs-12">
+											<div class="sideProfileInfo-icon-written">Web Development&nbsp;<span style="font-size: 14px;">(server side)</span></div>
+										</div>
+										<div class="col-sm-12 col-xs-12">
+											<div class="sideProfileInfo-percentage-bar"><div style="width: 90%">90%</div></div>
+										</div>
+									</div>
+									<div class="row sideProfileInfo-part-each">
+										<div class="col-sm-12 col-xs-12">
+											<div class="sideProfileInfo-icon-written">Frontend Web Development</div>
+										</div>
+										<div class="col-sm-12 col-xs-12">
+											<div class="sideProfileInfo-percentage-bar"><div style="width: 80%">80%</div></div>
+										</div>
+									</div>
+									<!-- <div class="row sideProfileInfo-part-each">
+										<div class="col-sm-12 col-xs-12">
+											<div class="sideProfileInfo-icon-written">Machine Learning</div>
+										</div>
+										<div class="col-sm-12 col-xs-12">
+											<div class="sideProfileInfo-percentage-bar"><div style="width: 10%">10%</div></div>
+										</div>
+									</div> -->
+									<div class="row sideProfileInfo-part-each">
+										<div class="col-sm-12 col-xs-12">
+											<div class="sideProfileInfo-icon-written">Business And Accounts</div>
+										</div>
+										<div class="col-sm-12 col-xs-12">
+											<div class="sideProfileInfo-percentage-bar"><div style="width: 80%">80%</div></div>
+										</div>
+									</div>
+									<div class="row sideProfileInfo-part-each">
+										<div class="col-sm-12 col-xs-12">
+											<div class="sideProfileInfo-icon-written">Entrepreneurship</div>
+										</div>
+										<div class="col-sm-12 col-xs-12">
+											<div class="sideProfileInfo-percentage-bar"><div style="width: 100%">100%</div></div>
+										</div>
+									</div>
+									<div class="row sideProfileInfo-part-each">
+										<div class="col-sm-12 col-xs-12">
+											<div class="sideProfileInfo-icon-written">Communication &amp; Media</div>
+										</div>
+										<div class="col-sm-12 col-xs-12">
+											<div class="sideProfileInfo-percentage-bar"><div style="width: 90%">90%</div></div>
+										</div>
+									</div>
+									<div class="row sideProfileInfo-part-each">
+										<div class="col-sm-12 col-xs-12">
+											<div class="sideProfileInfo-icon-written">Sales</div>
+										</div>
+										<div class="col-sm-12 col-xs-12">
+											<div class="sideProfileInfo-percentage-bar"><div style="width: 70%">70%</div></div>
 										</div>
 									</div>
 								</div>
@@ -203,7 +346,7 @@
 			</div>
 		</div>
 	</div>
-
+<br/><br/><br/><br/><br/><br/><br/>
 </body>
 	<script type="text/javascript">
 		(function(event){
