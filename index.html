@@ -134,12 +134,18 @@
 				width: 100%;
 				padding: 5px;
 			}
+			.sideProfileInfo-part-each {
+				padding: 5px 0;
+			}
 			.sideProfileInfo-icon {
 				font-size: 20px;
 			}
 			.sideProfileInfo-written {
-				font-size: 15px;
 				padding-left: 15px;
+			}
+			.sideProfileInfo-written,
+			.sideProfileInfo-written * {
+				font-size: 15px;
 				color: #757575;
 			}
 			.sideProfileInfo-icon {
@@ -159,12 +165,28 @@
 							</div>
 							<div class="sideProfileInfo">
 								<div class="sideProfileInfo-part">
-									<div class="row">
+									<div class="row sideProfileInfo-part-each">
 										<div class="col-sm-1 col-xs-11">
 											<span class="fa fa-briefcase sideProfileInfo-icon" aria-hidden="true"></span>
 										</div>
 										<div class="col-sm-11 col-xs-11">
 											<span class="sideProfileInfo-written">Full Stack Developer</span>
+										</div>
+									</div>
+									<div class="row sideProfileInfo-part-each">
+										<div class="col-sm-1 col-xs-11">
+											<span class="fa fa-home sideProfileInfo-icon" aria-hidden="true"></span>
+										</div>
+										<div class="col-sm-11 col-xs-11">
+											<span class="sideProfileInfo-written">New Delhi, India</span>
+										</div>
+									</div>
+									<div class="row sideProfileInfo-part-each">
+										<div class="col-sm-1 col-xs-11">
+											<span class="fa fa-envelope sideProfileInfo-icon" aria-hidden="true"></span>
+										</div>
+										<div class="col-sm-11 col-xs-11">
+											<span class="sideProfileInfo-written"><a href="mailto:anubhav@thegib.in">anubhav@thegib.in</a></span>
 										</div>
 									</div>
 								</div>
@@ -186,7 +208,7 @@
 	<script type="text/javascript">
 		(function(event){
 			window.setTimeout(function(){
-				document.querySelector('.loaderHolder').remove();
+				document.querySelector('.loaderHolder').setAttribute('style', 'display: none');
 				document.querySelector('#mainPageContent').setAttribute('style', 'display: block');
 			}, 2000);
 		})();
