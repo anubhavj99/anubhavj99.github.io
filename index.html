@@ -216,7 +216,7 @@
 
 		<div class="pageContent">
 			<div class="row">
-				<div class="col-sm-4 col-xs-12">
+				<div class="col-sm-3 col-xs-12">
 					<div class="colPaddings">
 						<div class="leftSideProfile">
 							<div class="sideProfileImageDiv">
@@ -238,20 +238,24 @@
 										</div>
 									</div>
 									<div class="row sideProfileInfo-part-each">
-										<div class="col-sm-1 col-xs-1">
-											<span class="fa fa-envelope sideProfileInfo-icon" aria-hidden="true"></span>
-										</div>
-										<div class="col-sm-11 col-xs-11">
-											<span class="sideProfileInfo-written"><a href="mailto:anubhav@thegib.in">anubhav@thegib.in</a></span>
-										</div>
+										<a href="mailto:anubhav@thegib.in">
+											<div class="col-sm-1 col-xs-1">
+												<span class="fa fa-envelope sideProfileInfo-icon" aria-hidden="true"></span>
+											</div>
+											<div class="col-sm-11 col-xs-11">
+												<span class="sideProfileInfo-written">anubhav@thegib.in</span>
+											</div>
+										</a>
 									</div>
 									<div class="row sideProfileInfo-part-each">
-										<div class="col-sm-1 col-xs-1">
-											<span class="fa fa-phone sideProfileInfo-icon" aria-hidden="true"></span>
-										</div>
-										<div class="col-sm-11 col-xs-11">
-											<span class="sideProfileInfo-written"><a href="tel:+919899325122">+91 989-932-5122</a></span>
-										</div>
+										<a href="tel:+919899325122">
+											<div class="col-sm-1 col-xs-1">
+												<span class="fa fa-phone sideProfileInfo-icon" aria-hidden="true"></span>
+											</div>
+											<div class="col-sm-11 col-xs-11">
+												<span class="sideProfileInfo-written">+91 989-932-5122</span>
+											</div>
+										</a>
 									</div>
 									<div class="row sideProfileInfo-part-each">
 										<div class="col-sm-1 col-xs-1">
@@ -356,7 +360,7 @@
 								<div class="sideProfileInfo-part">
 									<div class="row sideProfileInfo-part-heading">
 										<div class="col-sm-1 col-xs-1">
-											<span class="fa fa-language sideProfileInfo-icon" aria-hidden="true"></span>
+											<span class="fa fa-code sideProfileInfo-icon" aria-hidden="true"></span>
 										</div>
 										<div class="col-sm-11 col-xs-11">
 											<div class="sideProfileInfo-written"> Languages</div>
@@ -499,7 +503,8 @@
 						padding: 20px 0;
 						border-bottom: 1px solid #ddd;
 					}
-					.rightElaborateProfile-body-part-heading {
+					.rightElaborateProfile-body-part-heading,
+					.rightElaborateProfile-body-part-heading * {
 						padding: 5px 0;
 						color: #777;
 						font-size: 18px;
@@ -524,6 +529,16 @@
 						font-size: 14px;
 						font-weight: 400;
 					}
+					.githubLinks {
+						font-weight: 600;
+						text-decoration: underline;
+						cursor: pointer;
+						display: inline-block;
+					}
+					.githubLinks .fa {
+						margin-left: 5px;
+						font-size: 20px;
+					}
 					@media (max-width: 767px) {
 						.rightElaborateProfile-body {
 							padding: 10px 5px;
@@ -531,11 +546,11 @@
 					}
 				</style>
 
-				<div class="col-sm-8 col-xs-12">
+				<div class="col-sm-9 col-xs-12">
 					<div class="row">
 						<div class="col-sm-12 col-xs-12">
 							<div class="colPaddings">
-								<div class="rightElaborateProfile">
+								<div class="rightElaborateProfile" id="work-experience">
 									<div class="rightElaborateProfile-heading">
 										<div class="row">
 											<div class="col-sm-1 col-xs-2">
@@ -595,7 +610,87 @@
 						</div>
 						<div class="col-sm-12 col-xs-12">
 							<div class="colPaddings">
-								<div class="rightElaborateProfile">
+								<div class="rightElaborateProfile" id="projects">
+									<div class="rightElaborateProfile-heading">
+										<div class="row">
+											<div class="col-sm-1 col-xs-2">
+												<span class="fa fa-flask rightElaborateProfile-heading-icon" aria-hidden="true"></span>
+											</div>
+											<div class="col-sm-11 col-xs-10">
+												<div class="rightElaborateProfile-heading-written">
+													Projects
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="rightElaborateProfile-body">
+										<div class="rightElaborateProfile-body-part">
+											<div class="rightElaborateProfile-body-part-heading">
+												Chain Reaction Game <a href="https://www.iiitd.ac.in/vivekk">(under Prof. Vivek Kumar)</a>
+											</div>
+											<div class="rightElaborateProfile-body-part-timeframe">
+												<div class="row">
+													<div class="col-sm-1 col-xs-1">
+														<span class="fa fa-calendar" aria-hidden="true"></span>
+													</div>
+													<div class="col-sm-11 col-xs-11">
+														<div>
+															October 2017 - November 2017
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="rightElaborateProfile-body-part-details">
+												The game was made over Java using the JavaFx library for animations. Here is the github link to source code : <a href="https://github.com/Arshdeep25/chainreaction_ap_project" class="githubLinks">Github <span class="fa fa-github"></span></a>
+											</div>
+										</div>
+										<div class="rightElaborateProfile-body-part">
+											<div class="rightElaborateProfile-body-part-heading">
+												Multichat System <a href="https://www.iiitd.ac.in/sambuddho">(under Prof. Sambuddho Chakravarty)</a>
+											</div>
+											<div class="rightElaborateProfile-body-part-timeframe">
+												<div class="row">
+													<div class="col-sm-1 col-xs-1">
+														<span class="fa fa-calendar" aria-hidden="true"></span>
+													</div>
+													<div class="col-sm-11 col-xs-11">
+														<div>
+															March 2018
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="rightElaborateProfile-body-part-details">
+												A multichat system was made using the mechanisms of the basic IPC's in the C language. Here is the github link to source code : <a href="https://github.com/anubhavj99/MutliChat-System" class="githubLinks">Github <span class="fa fa-github"></span></a>
+											</div>
+										</div>
+										<div class="rightElaborateProfile-body-part">
+											<div class="rightElaborateProfile-body-part-heading">
+												Arm Simulator (under Prof. Rahul Nagpal)
+											</div>
+											<div class="rightElaborateProfile-body-part-timeframe">
+												<div class="row">
+													<div class="col-sm-1 col-xs-1">
+														<span class="fa fa-calendar" aria-hidden="true"></span>
+													</div>
+													<div class="col-sm-11 col-xs-11">
+														<div>
+															November 2017 - December 2017
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="rightElaborateProfile-body-part-details">
+												An Arm language simulator was designed using python. Many commands were implemented in this. Here is the github link to source code : <a href="https://github.com/anubhavj99/Arm-Simulator" class="githubLinks">Github <span class="fa fa-github"></span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-xs-12">
+							<div class="colPaddings">
+								<div class="rightElaborateProfile" id="education">
 									<div class="rightElaborateProfile-heading">
 										<div class="row">
 											<div class="col-sm-1 col-xs-2">
@@ -675,7 +770,7 @@
 						</div>
 						<div class="col-sm-12 col-xs-12">
 							<div class="colPaddings">
-								<div class="rightElaborateProfile">
+								<div class="rightElaborateProfile" id="co-curricular">
 									<div class="rightElaborateProfile-heading">
 										<div class="row">
 											<div class="col-sm-1 col-xs-2">
@@ -706,7 +801,7 @@
 												</div>
 											</div>
 											<div class="rightElaborateProfile-body-part-details">
-												Worked at an NGO for the blind in its Delhi branch, where I taught children and helped them for chores that required compulsation of eyesight.
+												Worked at an NGO for the blind in its Delhi branch, where I taught children and helped them for chores that required compulsion of eyesight.
 											</div>
 										</div>
 										<div class="rightElaborateProfile-body-part">
@@ -738,14 +833,14 @@
 			</div>
 		</div>
 	</div>
-<br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
 </body>
 	<script type="text/javascript">
 		(function(event){
 			window.setTimeout(function(){
 				document.querySelector('.loaderHolder').setAttribute('style', 'display: none');
 				document.querySelector('#mainPageContent').setAttribute('style', 'display: block');
-			}, 2000);
+			}, 0);
 		})();
 	</script>
 </html>
