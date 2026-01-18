@@ -1,939 +1,552 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=0.1">
-	<link rel="shortcut icon" type="image/png" href="img/AJ.png">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>HOME</title>
+	<link rel="shortcut icon" type="image/png" href="img/AJ.png">
+	<title>Anubhav Jaiswal</title>
 
-	<!-- bootstrap start  -->
-	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- bootstrap end -->
-    <!-- fontawesome icons -->
-	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- fontawesome icons end -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
 
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
 
-	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-
-	<style type="text/css">
 		body {
-			font-family: 'Poppins', sans-serif;
-    		background: #f1f3f6;
-		}
-		.noselect {
-		  -webkit-touch-callout: none; /* iOS Safari */
-		    -webkit-user-select: none; /* Safari */
-		     -khtml-user-select: none; /* Konqueror HTML */
-		       -moz-user-select: none; /* Firefox */
-		        -ms-user-select: none; /* Internet Explorer/Edge */
-		            user-select: none; /* Non-prefixed version, currently
-		                                  supported by Chrome and Opera */
-		}
-
-		/*slight change of padding in the bootstrap file*/
-		.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2,
-		.col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7,
-		.col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11,
-		.col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5,
-		.col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1,
-		.col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3,
-		.col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8,
-		.col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12,
-		.col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6,
-		.col-xs-7, .col-xs-8, .col-xs-9 {
-		    padding: 0;
-		}
-
-		.row {
-		    margin: 0;
-		}
-
-		.inlineDisplay {
-		    display: inline-block !important;
-		}
-
-		@media (max-width: 767px) {
-
-		    .only-display-less-767-inline {
-		        display: inline-block;
-		    }
-		    .only-display-greater-767 {
-		        display: none;
-		    }
-		    .only-display-less-767 {
-		        display: block;
-		    }
-
-		}
-		@media (min-width: 768px) {
-
-		    .only-display-less-767-inline {
-		        display: none;
-		    }
-		    .only-display-greater-767 {
-		        display: block;
-		    }
-		    .only-display-less-767 {
-		        display: none;
-		    }
-
-		}
-	</style>
-
-<body>
-	<link rel="stylesheet" type="text/css" href="css/dotLoader.css">
-	<div class="loaderHolder">
-		<div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-	</div>
-
-	<style type="text/css">
-		#mainPageContent {
-			display: none;
-		}
-		.navbar-homepage {
+			font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 			background: #fff;
-			box-shadow: 0 2px 3px 0 #ddd;
-			border-radius: 0;
-			padding: 0 20px;
-		}
-		.navbar-brand {
-			font-weight: 600;
-			letter-spacing: 0.1px;
-			font-size: 25px !important;
-		}
-		.navbar-homepage a {
-			color: #777;
-			font-weight: 500;
+			color: #111;
+			line-height: 1.5;
 			font-size: 16px;
+			min-height: 100vh;
+			padding: 80px 40px;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+		}
+
+		h1 {
+			font-size: 4rem;
+			font-weight: 900;
+			margin-bottom: 16px;
+			letter-spacing: -2px;
+			line-height: 1.1;
+		}
+
+		.tagline {
+			font-size: 1.75rem;
+			color: #666;
+			margin-bottom: 60px;
+			font-weight: 400;
+			line-height: 1.4;
+		}
+
+		section {
+			margin-bottom: 50px;
+		}
+
+		h2 {
+			font-size: 1.25rem;
+			font-weight: 700;
+			margin-bottom: 24px;
+			color: #111;
+		}
+
+		.item {
+			margin-bottom: 20px;
+		}
+
+		.item-title {
+			font-weight: 600;
+			font-size: 1rem;
+			color: #111;
+			margin-bottom: 4px;
+		}
+
+		.item-desc {
+			color: #666;
+			font-size: 0.95rem;
+		}
+
+		.item a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		.item a:hover .item-title {
+			text-decoration: underline;
+		}
+
+		.links {
+			display: flex;
+			gap: 24px;
+			margin-bottom: 60px;
+		}
+
+		.links a {
+			color: #666;
+			text-decoration: none;
+			font-size: 0.95rem;
+			display: flex;
+			align-items: center;
+			gap: 4px;
+		}
+
+		.links a:hover {
+			color: #111;
+		}
+
+		.links a svg {
+			width: 18px;
+			height: 18px;
+			stroke: currentColor;
+			stroke-width: 2;
+			fill: none;
+		}
+
+		.skills-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			gap: 24px;
+		}
+
+		.skill-category {
+			margin-bottom: 8px;
+		}
+
+		.skill-label {
+			font-weight: 600;
+			font-size: 0.85rem;
+			color: #111;
+			margin-bottom: 10px;
+			text-transform: uppercase;
+			letter-spacing: 0.5px;
+		}
+
+		.skill-tags {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 8px;
+		}
+
+		.skill-tag {
+			background: #f0f0f0;
+			color: #333;
+			padding: 6px 12px;
+			border-radius: 20px;
+			font-size: 0.85rem;
+			font-weight: 500;
+			transition: all 0.2s ease;
+		}
+
+		.skill-tag:hover {
+			background: #111;
+			color: #fff;
+		}
+
+		.recognition-grid {
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+		}
+
+		.recognition-item {
+			display: flex;
+			align-items: flex-start;
+			gap: 16px;
+			padding: 16px;
+			background: #fafafa;
+			border-radius: 12px;
+			transition: all 0.2s ease;
+		}
+
+		.recognition-item:hover {
+			background: #f0f0f0;
+		}
+
+		.recognition-icon {
+			width: 24px;
+			height: 24px;
+			color: #666;
+		}
+
+		.recognition-icon svg {
+			width: 100%;
+			height: 100%;
+			stroke: currentColor;
+			fill: none;
+		}
+
+		.recognition-content {
+			flex: 1;
+		}
+
+		.recognition-title {
+			font-weight: 600;
+			font-size: 1rem;
+			color: #111;
+			margin-bottom: 2px;
+		}
+
+		.recognition-meta {
+			font-size: 0.85rem;
+			color: #666;
+		}
+
+		/* Expandable experience cards */
+		.exp-card {
+			margin-bottom: 16px;
+			border: 1px solid #eee;
+			border-radius: 12px;
+			overflow: hidden;
+			transition: all 0.2s ease;
+		}
+
+		.exp-card:hover {
+			border-color: #ddd;
+		}
+
+		.exp-header {
+			padding: 20px;
+			cursor: pointer;
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			gap: 16px;
+		}
+
+		.exp-header:hover {
+			background: #fafafa;
+		}
+
+		.exp-info {
+			flex: 1;
+		}
+
+		.exp-title {
+			font-weight: 600;
+			font-size: 1rem;
+			color: #111;
+			margin-bottom: 4px;
+		}
+
+		.exp-meta {
+			font-size: 0.85rem;
+			color: #888;
+			margin-bottom: 8px;
+		}
+
+		.exp-summary {
+			color: #666;
+			font-size: 0.95rem;
+		}
+
+		.exp-toggle {
+			color: #999;
+			font-size: 1.25rem;
+			transition: transform 0.2s ease;
+			flex-shrink: 0;
+		}
+
+		.exp-card.open .exp-toggle {
+			transform: rotate(180deg);
+		}
+
+		.exp-details {
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.3s ease;
+		}
+
+		.exp-card.open .exp-details {
+			max-height: 1000px;
+		}
+
+		.exp-content {
+			padding: 0 20px 20px;
+			border-top: 1px solid #eee;
+		}
+
+		.exp-content ul {
+			list-style: none;
+			margin: 16px 0 0;
+		}
+
+		.exp-content li {
+			padding: 8px 0;
+			padding-left: 20px;
+			position: relative;
+			color: #555;
+			font-size: 0.9rem;
+			line-height: 1.5;
+		}
+
+		.exp-content li::before {
+			content: "→";
+			position: absolute;
+			left: 0;
+			color: #999;
+		}
+
+		.exp-tech {
+			margin-top: 16px;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 6px;
+		}
+
+		.exp-tech span {
+			background: #f5f5f5;
+			color: #666;
+			padding: 4px 10px;
+			border-radius: 12px;
+			font-size: 0.75rem;
+		}
+
+		@media (max-width: 600px) {
+			body {
+				padding: 40px 24px;
+			}
+
+			h1 {
+				font-size: 2.5rem;
+			}
+
+			.tagline {
+				font-size: 1.25rem;
+			}
 		}
 	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Anubhav Jaiswal</h1>
+		<p class="tagline">Software engineer building scalable systems and AI products at Amazon. Currently on Rufus, Amazon's conversational AI assistant.</p>
 
-	<div id="mainPageContent">
-		<nav class="navbar navbar-fixed-top navbar-homepage">
-			<div class="container-fluid">
-				<div class="navbar-header">
-				  	<a class="navbar-brand">ANUBHAV JAISWAL</a>
-				</div>
-				<ul class="nav navbar-nav navbar-right only-display-greater-767">
-					<li><a href="CV-AnubhavJaiswal.pdf" target="_blank">DOWNLOAD RESUME</a></li>
-				</ul>
-			</div>
-		</nav>
-
-		<style type="text/css">
-			.pageContent {
-				padding: 20px;
-				margin-top: 60px;
-			}
-			.colPaddings {
-				padding: 15px;
-			}
-			.leftSideProfile {
-				box-shadow: 1px 1px 5px 1px #bbb;
-				background: #fff;
-				border-radius: 20px;
-			}
-			.sideProfileImageDiv {
-				width: 100%;
-				position: relative;
-			}
-			.sideProfileImage {
-				width: 100%;
-				height: auto;
-				border-radius: 20px 20px 0 0;
-			}
-			.sideProfileImageDiv > div > div {
-				position: absolute;
-				bottom: 5%;
-				left: 0;
-				width: 100%;
-				padding: 2% 10%;
-				background: #fff;
-				color: #000;
-				font-size: 18px;
-			}
-			.sideProfileInfo {
-				padding: 20px;
-			}
-			.sideProfileInfo-part {
-				width: 100%;
-				padding: 10px 5px;
-				border-bottom: 1px solid #ddd;
-			}
-			.sideProfileInfo-part-heading {
-				padding: 5px 0 10px 0;
-			}
-			.sideProfileInfo-part-heading .sideProfileInfo-written {
-				font-size: 20px !important;
-			}
-			.sideProfileInfo-part-each {
-				padding: 5px 0;
-			}
-			.sideProfileInfo-icon {
-				font-size: 20px;
-			}
-			.sideProfileInfo-icon-written {
-				font-size: 16px;
-				padding: 10px 0 16px 0;
-				text-align: left;
-				color: #0079ff;
-			}
-			.sideProfileInfo-written {
-				padding-left: 15px;
-			}
-			.sideProfileInfo-written,
-			.sideProfileInfo-written * {
-				font-size: 15px;
-				color: #757575;
-			}
-			.sideProfileInfo-icon {
-				color: #0079ff;
-			}
-			.sideProfileInfo-percentage-bar {
-				width: 100%;
-				border-radius: 10px;
-				height: 20px;
-				background: #e0e0e0;
-			}
-			.sideProfileInfo-percentage-bar div {
-				background: #0079ff;
-				border-radius: 10px;
-				height: 20px;
-				text-align: center;
-				font-size: 12px;
-				line-height: 20px;
-				color: #fff;
-			}
-
-			@media (max-width: 767px) {
-				.pageContent {
-					padding: 0;
-				}
-				.colPaddings {
-					padding: 10px 5px;
-				}
-			}
-		</style>
-
-		<div class="pageContent">
-			<div class="row">
-				<div class="col-sm-4 col-xs-12">
-					<div class="colPaddings">
-						<div class="leftSideProfile">
-							<div class="sideProfileImageDiv">
-								<div>
-									<img class="sideProfileImage" src="img/pp.jpg" alt="ANUBHAV JAISWAL" id="selfImage">
-									<div>
-										अनुभव जायसवाल
-									</div>
-								</div>
-							</div>
-							<div class="sideProfileInfo">
-								<div class="sideProfileInfo-part">
-									<div class="row sideProfileInfo-part-each">
-										<div class="col-sm-1 col-xs-1">
-											<span class="fa fa-briefcase sideProfileInfo-icon" aria-hidden="true"></span>
-										</div>
-										<div class="col-sm-11 col-xs-11">
-											<span class="sideProfileInfo-written">Machine Learning | Full Stack Development | IoT</span>
-										</div>
-									</div>
-									<div class="row sideProfileInfo-part-each">
-										<a href="mailto:anubhav16014@iiitd.ac.in">
-											<div class="col-sm-1 col-xs-1">
-												<span class="fa fa-envelope sideProfileInfo-icon" aria-hidden="true"></span>
-											</div>
-											<div class="col-sm-11 col-xs-11">
-												<span class="sideProfileInfo-written">anubhav16014@iiitd.ac.in</span>
-											</div>
-										</a>
-									</div>
-									<div class="row sideProfileInfo-part-each">
-										<div class="col-sm-1 col-xs-1">
-											<span class="fa fa-home sideProfileInfo-icon" aria-hidden="true"></span>
-										</div>
-										<div class="col-sm-11 col-xs-11">
-											<span class="sideProfileInfo-written">New Delhi, India</span>
-										</div>
-									</div>
-								</div>
-								<div class="sideProfileInfo-part">
-									<div class="row sideProfileInfo-part-heading">
-										<div class="col-sm-1 col-xs-1">
-											<span class="fa fa-star sideProfileInfo-icon" aria-hidden="true"></span>
-										</div>
-										<div class="col-sm-11 col-xs-11">
-											<div class="sideProfileInfo-written">Skills</div>
-										</div>
-									</div>
-									<div class="row sideProfileInfo-part-each">
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-icon-written">
-												<div>
-													Web Development&nbsp;
-													<span style="font-size: 14px;">
-														(server side)
-													</span>
-												</div>
-												<div>
-													<span style="font-size: 12px;">
-														(PYTHON, PHP, NODE.JS, JAVA)
-													</span>
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-percentage-bar"><div style="width: 90%">90%</div></div>
-										</div>
-									</div>
-									<div class="row sideProfileInfo-part-each">
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-icon-written">
-												<div>
-													AWS
-												</div>
-												<div>
-													<span style="font-size: 12px;">
-														(Lambda, ECS, ElasticSearch, ElastiCache, SQS, SNS, SES, EC2, Route53, Virtual Private Cloud, etc.)
-													</span>
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-percentage-bar"><div style="width: 70%">70%</div></div>
-										</div>
-									</div>
-									<div class="row sideProfileInfo-part-each">
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-icon-written">Frontend Web Development</div>
-										</div>
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-percentage-bar"><div style="width: 80%">80%</div></div>
-										</div>
-									</div>
-									<div class="row sideProfileInfo-part-each">
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-icon-written">Java Development</div>
-										</div>
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-percentage-bar"><div style="width: 80%">80%</div></div>
-										</div>
-									</div>
-									<!-- <div class="row sideProfileInfo-part-each">
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-icon-written">Machine Learning</div>
-										</div>
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-percentage-bar"><div style="width: 50%">50%</div></div>
-										</div>
-									</div> -->
-									<div class="row sideProfileInfo-part-each">
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-icon-written">Deep (Machine) Learning</div>
-										</div>
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-percentage-bar"><div style="width: 70%">70%</div></div>
-										</div>
-									</div>
-									<!-- <div class="row sideProfileInfo-part-each">
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-icon-written">Business And Accounts</div>
-										</div>
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-percentage-bar"><div style="width: 80%">80%</div></div>
-										</div>
-									</div> -->
-									<div class="row sideProfileInfo-part-each">
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-icon-written">Team Management</div>
-										</div>
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-percentage-bar"><div style="width: 60%">60%</div></div>
-										</div>
-									</div>
-									<div class="row sideProfileInfo-part-each">
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-icon-written">Communication &amp; Media</div>
-										</div>
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-percentage-bar"><div style="width: 70%">70%</div></div>
-										</div>
-									</div>
-									<!-- <div class="row sideProfileInfo-part-each">
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-icon-written">Sales</div>
-										</div>
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-percentage-bar"><div style="width: 70%">70%</div></div>
-										</div>
-									</div> -->
-								</div>
-								<div class="sideProfileInfo-part">
-									<div class="row sideProfileInfo-part-heading">
-										<div class="col-sm-1 col-xs-1">
-											<span class="fa fa-code sideProfileInfo-icon" aria-hidden="true"></span>
-										</div>
-										<div class="col-sm-11 col-xs-11">
-											<div class="sideProfileInfo-written"> Languages</div>
-										</div>
-									</div>
-									<div class="row sideProfileInfo-part-each">
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-icon-written">Java</div>
-										</div>
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-percentage-bar"><div style="width: 90%">90%</div></div>
-										</div>
-									</div>
-									<div class="row sideProfileInfo-part-each">
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-icon-written">Python</div>
-										</div>
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-percentage-bar"><div style="width: 90%">90%</div></div>
-										</div>
-									</div>
-									<div class="row sideProfileInfo-part-each">
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-icon-written">C/C++</div>
-										</div>
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-percentage-bar"><div style="width: 30%">30%</div></div>
-										</div>
-									</div>
-									<div class="row sideProfileInfo-part-each">
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-icon-written">PHP</div>
-										</div>
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-percentage-bar"><div style="width: 80%">80%</div></div>
-										</div>
-									</div>
-									<div class="row sideProfileInfo-part-each">
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-icon-written">JavaScript</div>
-										</div>
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-percentage-bar"><div style="width: 85%">85%</div></div>
-										</div>
-									</div>
-									<!-- <div class="row sideProfileInfo-part-each">
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-icon-written">NODE.JS</div>
-										</div>
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-percentage-bar"><div style="width: 80%">80%</div></div>
-										</div>
-									</div> -->
-									<div class="row sideProfileInfo-part-each">
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-icon-written">CSS / SCSS</div>
-										</div>
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-percentage-bar"><div style="width: 80%">80%</div></div>
-										</div>
-									</div>
-									<!-- <div class="row sideProfileInfo-part-each">
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-icon-written">MATLAB</div>
-										</div>
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-percentage-bar"><div style="width: 50%">50%</div></div>
-										</div>
-									</div> -->
-									<!-- <div class="row sideProfileInfo-part-each">
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-icon-written">Shell Script</div>
-										</div>
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-percentage-bar"><div style="width: 80%">80%</div></div>
-										</div>
-									</div> -->
-								</div>
-								<div class="sideProfileInfo-part">
-									<div class="row sideProfileInfo-part-heading">
-										<div class="col-sm-1 col-xs-1">
-											<span class="fa fa-language sideProfileInfo-icon" aria-hidden="true"></span>
-										</div>
-										<div class="col-sm-11 col-xs-11">
-											<div class="sideProfileInfo-written"> Language <span style="font-size: 14px;">(Human Spoken)</span></div>
-										</div>
-									</div>
-									<div class="row sideProfileInfo-part-each">
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-icon-written">हिंदी</div>
-										</div>
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-percentage-bar"><div style="width: 99%">99%</div></div>
-										</div>
-									</div>
-									<div class="row sideProfileInfo-part-each">
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-icon-written">English</div>
-										</div>
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-percentage-bar"><div style="width: 95%">95%</div></div>
-										</div>
-									</div>
-									<div class="row sideProfileInfo-part-each">
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-icon-written">Le Français</div>
-										</div>
-										<div class="col-sm-12 col-xs-12">
-											<div class="sideProfileInfo-percentage-bar"><div style="width: 5%">5%</div></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<style type="text/css">
-					.rightElaborateProfile {
-						padding: 20px;
-						box-shadow: 1px 1px 5px 1px #bbb;
-						background: #fff;
-						border-radius: 20px;
-					}
-					.rightElaborateProfile-heading {
-						padding-bottom: 10px;
-					}
-					.rightElaborateProfile-heading-icon {
-						color: #0079ff;
-						font-size: 30px;
-					}
-					.rightElaborateProfile-heading-written {
-						font-size: 25px;
-						color: #757575;
-					}
-					.rightElaborateProfile-body {
-						padding: 0 20px;
-						text-align: justify;
-					}
-					.rightElaborateProfile-body-part {
-						padding: 20px 0;
-						border-bottom: 1px solid #ddd;
-					}
-					.rightElaborateProfile-body-part-heading,
-					.rightElaborateProfile-body-part-heading * {
-						padding: 5px 0;
-						color: #777;
-						font-size: 18px;
-					}
-					.rightElaborateProfile-body-part-timeframe {
-						padding: 5px 0;
-						font-size: 15px;
-						color: #0079ff;
-					}
-					.rightElaborateProfile-body-part-timeframe .fa {
-						font-size: 18px;
-					}
-					.rightElaborateProfile-body-part-timeframe-present {
-						padding: 5px 8px;
-						background: #0079ff;
-						color: #fff;
-						border-radius: 2px;
-					}
-					.rightElaborateProfile-body-part-details {
-						color: #000;
-						padding: 10px 0;
-						font-size: 14px;
-						font-weight: 400;
-					}
-					.githubLinks {
-						font-weight: 600;
-						text-decoration: underline;
-						cursor: pointer;
-						display: inline-block;
-					}
-					.githubLinks .fa {
-						margin-left: 5px;
-						font-size: 20px;
-					}
-					@media (max-width: 767px) {
-						.rightElaborateProfile-body {
-							padding: 10px 5px;
-						}
-					}
-				</style>
-
-				<div class="col-sm-8 col-xs-12">
-					<div class="row">
-						<div class="col-sm-12 col-xs-12">
-							<div class="colPaddings">
-								<div class="rightElaborateProfile" id="work-experience">
-									<div class="rightElaborateProfile-heading">
-										<div class="row">
-											<div class="col-sm-1 col-xs-2">
-												<span class="fa fa-suitcase rightElaborateProfile-heading-icon" aria-hidden="true"></span>
-											</div>
-											<div class="col-sm-11 col-xs-10">
-												<div class="rightElaborateProfile-heading-written">
-													Work Experience
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="rightElaborateProfile-body">
-										<div class="rightElaborateProfile-body-part">
-											<div class="rightElaborateProfile-body-part-heading">
-												Amazon.com Inc.
-											</div>
-											<div class="rightElaborateProfile-body-part-timeframe">
-												<div class="row">
-													<div class="col-sm-1 col-xs-1">
-														<span class="fa fa-calendar" aria-hidden="true"></span>
-													</div>
-													<div class="col-sm-11 col-xs-11">
-														<div>
-															June 2019 - July 2019
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="rightElaborateProfile-body-part-details">
-												Interned in Amazon in the Gurgaon office. Worked on bringing the notification system for the MMTT team from hosts to native AWS. Worked with AWS Lambda and ECS. Used dependent services such as NoSQL over DynamoDB, ElasticSearch, caching with ElastiCache, Routing using Route53 and creating a virtual private cloud to put all of this on using VPC.
-											</div>
-										</div>
-										<div class="rightElaborateProfile-body-part">
-											<div class="rightElaborateProfile-body-part-heading">
-												One97 Communications Ltd.
-											</div>
-											<div class="rightElaborateProfile-body-part-timeframe">
-												<div class="row">
-													<div class="col-sm-1 col-xs-1">
-														<span class="fa fa-calendar" aria-hidden="true"></span>
-													</div>
-													<div class="col-sm-11 col-xs-11">
-														<div>
-															June 2018 - July 2018
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="rightElaborateProfile-body-part-details">
-												Developing in the post process of a transaction held at the payment gateway. The company - as you may know it - is PayTM.
-											</div>
-										</div>
-										<div class="rightElaborateProfile-body-part">
-											<div class="rightElaborateProfile-body-part-heading">
-												Express Roadways Pvt. Ltd.
-											</div>
-											<div class="rightElaborateProfile-body-part-timeframe">
-												<div class="row">
-													<div class="col-sm-1 col-xs-1">
-														<span class="fa fa-calendar" aria-hidden="true"></span>
-													</div>
-													<div class="col-sm-11 col-xs-11">
-														<div>
-															June 2017 - July 2017
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="rightElaborateProfile-body-part-details">
-												Developed an ERP system to manage the accounts and operations of the company. I was the head of the accounts department for Delhi and Hisar, and was responsible for full construction of the accounts section of the ERP system.
-											</div>
-										</div>
-										<!-- <div class="rightElaborateProfile-body-part">
-											<div class="rightElaborateProfile-body-part-heading">
-												BookBox E-Services
-											</div>
-											<div class="rightElaborateProfile-body-part-timeframe">
-												<div class="row">
-													<div class="col-sm-1 col-xs-1">
-														<span class="fa fa-calendar" aria-hidden="true"></span>
-													</div>
-													<div class="col-sm-11 col-xs-11">
-														<div>
-															August 2017 - <span class="rightElaborateProfile-body-part-timeframe-present">Present</span>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="rightElaborateProfile-body-part-details">
-												It is my <b>own startup</b> based on book vendoring on an online platform at school level. It started a team of 2 people both in development. However, the main work focused around selling of the platform to various schools and booksellers.
-											</div>
-										</div> -->
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-12 col-xs-12">
-							<div class="colPaddings">
-								<div class="rightElaborateProfile" id="projects">
-									<div class="rightElaborateProfile-heading">
-										<div class="row">
-											<div class="col-sm-1 col-xs-2">
-												<span class="fa fa-flask rightElaborateProfile-heading-icon" aria-hidden="true"></span>
-											</div>
-											<div class="col-sm-11 col-xs-10">
-												<div class="rightElaborateProfile-heading-written">
-													Projects
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="rightElaborateProfile-body">
-										<div class="rightElaborateProfile-body-part">
-											<div class="rightElaborateProfile-body-part-heading">
-												Chain Reaction Game <a href="https://www.iiitd.ac.in/vivekk">(under Prof. Vivek Kumar)</a>
-											</div>
-											<div class="rightElaborateProfile-body-part-timeframe">
-												<div class="row">
-													<div class="col-sm-1 col-xs-1">
-														<span class="fa fa-calendar" aria-hidden="true"></span>
-													</div>
-													<div class="col-sm-11 col-xs-11">
-														<div>
-															October 2017 - November 2017
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="rightElaborateProfile-body-part-details">
-												The game was made over Java using the JavaFx library for animations. Here is the github link to source code : <a href="https://github.com/Arshdeep25/chainreaction_ap_project" class="githubLinks">Github <span class="fa fa-github"></span></a>
-											</div>
-										</div>
-										<div class="rightElaborateProfile-body-part">
-											<div class="rightElaborateProfile-body-part-heading">
-												Multichat System <a href="https://www.iiitd.ac.in/sambuddho">(under Prof. Sambuddho Chakravarty)</a>
-											</div>
-											<div class="rightElaborateProfile-body-part-timeframe">
-												<div class="row">
-													<div class="col-sm-1 col-xs-1">
-														<span class="fa fa-calendar" aria-hidden="true"></span>
-													</div>
-													<div class="col-sm-11 col-xs-11">
-														<div>
-															March 2018
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="rightElaborateProfile-body-part-details">
-												A multichat system was made using the mechanisms of the basic IPC's in the C language. Here is the github link to source code : <a href="https://github.com/anubhavj99/MutliChat-System" class="githubLinks">Github <span class="fa fa-github"></span></a>
-											</div>
-										</div>
-										<div class="rightElaborateProfile-body-part">
-											<div class="rightElaborateProfile-body-part-heading">
-												Arm Simulator (under Prof. Rahul Nagpal)
-											</div>
-											<div class="rightElaborateProfile-body-part-timeframe">
-												<div class="row">
-													<div class="col-sm-1 col-xs-1">
-														<span class="fa fa-calendar" aria-hidden="true"></span>
-													</div>
-													<div class="col-sm-11 col-xs-11">
-														<div>
-															November 2017 - December 2017
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="rightElaborateProfile-body-part-details">
-												An Arm language simulator was designed using python. Many commands were implemented in this. Here is the github link to source code : <a href="https://github.com/anubhavj99/Arm-Simulator" class="githubLinks">Github <span class="fa fa-github"></span></a>
-											</div>
-										</div>
-										<div class="rightElaborateProfile-body-part">
-											<div class="rightElaborateProfile-body-part-heading">
-												VR-Game in Unity 3D (under Prof. Dheeraj Sanghi)
-											</div>
-											<div class="rightElaborateProfile-body-part-timeframe">
-												<div class="row">
-													<div class="col-sm-1 col-xs-1">
-														<span class="fa fa-calendar" aria-hidden="true"></span>
-													</div>
-													<div class="col-sm-11 col-xs-11">
-														<div>
-															October 2016 - November 2016
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="rightElaborateProfile-body-part-details">
-												A VR-supported game was developed as a part of the course project under professor Dheeraj Sanghi. It used a button on the VR headset to shoot things falling out of the space.
-											</div>
-										</div>
-										<div class="rightElaborateProfile-body-part">
-											<div class="rightElaborateProfile-body-part-heading">
-												Smart Backpack <a href="http://faculty.iiitd.ac.in/~alex/">(under Prof. Alexander Fell)</a>
-											</div>
-											<div class="rightElaborateProfile-body-part-timeframe">
-												<div class="row">
-													<div class="col-sm-1 col-xs-1">
-														<span class="fa fa-calendar" aria-hidden="true"></span>
-													</div>
-													<div class="col-sm-11 col-xs-11">
-														<div>
-															December 2016 - May 2017
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="rightElaborateProfile-body-part-details">
-												The backpack is loaded with IoT features as an ultimate upgrade. Some of it include object tracking to be kept in backpack according to the timetable, the location tracker - GPS (no shit!), automatic and proximity locking system, and so on.
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-12 col-xs-12">
-							<div class="colPaddings">
-								<div class="rightElaborateProfile" id="education">
-									<div class="rightElaborateProfile-heading">
-										<div class="row">
-											<div class="col-sm-1 col-xs-2">
-												<span class="fa fa-graduation-cap rightElaborateProfile-heading-icon" aria-hidden="true"></span>
-											</div>
-											<div class="col-sm-11 col-xs-10">
-												<div class="rightElaborateProfile-heading-written">
-													Education
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="rightElaborateProfile-body">
-										<div class="rightElaborateProfile-body-part">
-											<div class="rightElaborateProfile-body-part-heading">
-												IIITD
-											</div>
-											<div class="rightElaborateProfile-body-part-timeframe">
-												<div class="row">
-													<div class="col-sm-1 col-xs-1">
-														<span class="fa fa-calendar" aria-hidden="true"></span>
-													</div>
-													<div class="col-sm-11 col-xs-11">
-														<div>
-															August 2016 - <span class="rightElaborateProfile-body-part-timeframe-present">Present</span>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="rightElaborateProfile-body-part-details">
-												Currently pursuing and undergraduate course in CSE from IIITD.
-											</div>
-										</div>
-										<div class="rightElaborateProfile-body-part">
-											<div class="rightElaborateProfile-body-part-heading">
-												The Mother's International School
-											</div>
-											<div class="rightElaborateProfile-body-part-timeframe">
-												<div class="row">
-													<div class="col-sm-1 col-xs-1">
-														<span class="fa fa-calendar" aria-hidden="true"></span>
-													</div>
-													<div class="col-sm-11 col-xs-11">
-														<div>
-															2015-16
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="rightElaborateProfile-body-part-details">
-												12<sup>th</sup> Board - 93.4%
-											</div>
-										</div>
-										<div class="rightElaborateProfile-body-part">
-											<div class="rightElaborateProfile-body-part-heading">
-												The Mother's International School
-											</div>
-											<div class="rightElaborateProfile-body-part-timeframe">
-												<div class="row">
-													<div class="col-sm-1 col-xs-1">
-														<span class="fa fa-calendar" aria-hidden="true"></span>
-													</div>
-													<div class="col-sm-11 col-xs-11">
-														<div>
-															2013-14
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="rightElaborateProfile-body-part-details">
-												10<sup>th</sup> Board - 9.4 CGPA
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-12 col-xs-12">
-							<div class="colPaddings">
-								<div class="rightElaborateProfile" id="co-curricular">
-									<div class="rightElaborateProfile-heading">
-										<div class="row">
-											<div class="col-sm-1 col-xs-2">
-												<span class="fa fa-pagelines rightElaborateProfile-heading-icon" aria-hidden="true"></span>
-											</div>
-											<div class="col-sm-11 col-xs-10">
-												<div class="rightElaborateProfile-heading-written">
-													Co-curricular
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="rightElaborateProfile-body">
-										<div class="rightElaborateProfile-body-part">
-											<div class="rightElaborateProfile-body-part-heading">
-												National Association for Blind (NAB)
-											</div>
-											<div class="rightElaborateProfile-body-part-timeframe">
-												<div class="row">
-													<div class="col-sm-1 col-xs-1">
-														<span class="fa fa-calendar" aria-hidden="true"></span>
-													</div>
-													<div class="col-sm-11 col-xs-11">
-														<div>
-															Summer of '15
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="rightElaborateProfile-body-part-details">
-												Worked at an NGO for the blind in its Delhi branch, where I taught children and helped them for chores that required compulsion of eyesight.
-											</div>
-										</div>
-										<div class="rightElaborateProfile-body-part">
-											<div class="rightElaborateProfile-body-part-heading">
-												Lawn Tennis
-											</div>
-											<div class="rightElaborateProfile-body-part-timeframe">
-												<div class="row">
-													<div class="col-sm-1 col-xs-1">
-														<span class="fa fa-calendar" aria-hidden="true"></span>
-													</div>
-													<div class="col-sm-11 col-xs-11">
-														<div>
-															2009 - 2013
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="rightElaborateProfile-body-part-details">
-												Played the sub-junior state level in lawn tennis for the Delhi state.
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+		<div class="links">
+			<a href="https://github.com/anubhavj99" target="_blank">
+				<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke="currentColor" fill="none"/></svg>
+				github
+			</a>
+			<a href="https://linkedin.com/in/anubhav-jaiswal" target="_blank">
+				<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" fill="none"/><rect x="2" y="9" width="4" height="12" stroke="currentColor" fill="none"/><circle cx="4" cy="4" r="2" stroke="currentColor" fill="none"/></svg>
+				linkedin
+			</a>
+			<a href="mailto:anubhav.jaiswal99@hotmail.com">
+				<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" fill="none"/><polyline points="22,6 12,13 2,6" stroke="currentColor" fill="none"/></svg>
+				email
+			</a>
+			<a href="CV-AnubhavJaiswal.pdf" target="_blank">
+				<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" fill="none"/><polyline points="14 2 14 8 20 8" stroke="currentColor" fill="none"/><line x1="16" y1="13" x2="8" y2="13" stroke="currentColor"/><line x1="16" y1="17" x2="8" y2="17" stroke="currentColor"/><polyline points="10 9 9 9 8 9" stroke="currentColor" fill="none"/></svg>
+				resume
+			</a>
 		</div>
+
+		<section>
+			<h2>Experience</h2>
+			
+			<div class="exp-card" onclick="this.classList.toggle('open')">
+				<div class="exp-header">
+					<div class="exp-info">
+						<div class="exp-title">SDE, Amazon (Rufus, London)</div>
+						<div class="exp-meta">Nov 2024 - Present</div>
+						<div class="exp-summary">Building Amazon's AI shopping assistant. Plugin architecture at 35K+ TPS. Patent pending.</div>
+					</div>
+					<div class="exp-toggle">▼</div>
+				</div>
+				<div class="exp-details">
+					<div class="exp-content">
+						<ul>
+							<li>Re-architected Tier-1 service into plugin-based orchestration with federated alarms, teams onboard in days vs weeks</li>
+							<li>Cut deploy time from 3h to 15m (92% faster) with shadow prod pipelines and parallel dev stacks</li>
+							<li>Optimized LLM streaming pipeline: 300ms render reduction, 5-10s faster complete answers</li>
+							<li>Shipped progressive markdown rendering in 7 days (planned: 60 days), reused across all Amazon Retail teams</li>
+							<li>Patent pending: Progressive reveal algorithm for HTML streaming with 10x larger content support</li>
+							<li>Mentored SDEs on plugin architecture; guided away teams through service onboarding</li>
+						</ul>
+						<div class="exp-tech">
+							<span>Java</span>
+							<span>TypeScript</span>
+							<span>React</span>
+							<span>AWS</span>
+							<span>SSR</span>
+							<span>CloudWatch</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="exp-card" onclick="this.classList.toggle('open')">
+				<div class="exp-header">
+					<div class="exp-info">
+						<div class="exp-title">SDE, Amazon (ShipTech, Gurugram)</div>
+						<div class="exp-meta">Jul 2020 - Nov 2024</div>
+						<div class="exp-summary">Owned transportation orchestration. Built LLM automation tools. NL-to-SQL framework approved by Amazon ML.</div>
+					</div>
+					<div class="exp-toggle">▼</div>
+				</div>
+				<div class="exp-details">
+					<div class="exp-content">
+						<ul>
+							<li>Core owner of front-facing service orchestrating transportation requests across 20+ downstream services</li>
+							<li>Built LLM-powered feedback intelligence, reduced leadership reporting from 3 weeks to 15 mins (98% faster)</li>
+							<li>Designed NL-to-SQL framework over massive datasets, approved by Amazon ML community, piloted on 2 databases</li>
+							<li>Automated intake process across 50+ teams, 70%+ PM/PA effort reduction</li>
+							<li>Built contingency management system ingesting news/weather/geo to predict strikes and recommend actions</li>
+							<li>Implemented rate-limiting, circuit breakers, and automated log aggregation for faster triage</li>
+							<li>Migrated transportation monolith to federated microservices architecture</li>
+							<li>Built external API interface for third-party logistics integrations</li>
+						</ul>
+						<div class="exp-tech">
+							<span>Java</span>
+							<span>Python</span>
+							<span>SageMaker</span>
+							<span>Bedrock</span>
+							<span>LangChain</span>
+							<span>DynamoDB</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="exp-card" onclick="this.classList.toggle('open')">
+				<div class="exp-header">
+					<div class="exp-info">
+						<div class="exp-title">Intern, Amazon (Gurugram)</div>
+						<div class="exp-meta">Summer 2019</div>
+						<div class="exp-summary">Migrated notification system to AWS-native infrastructure.</div>
+					</div>
+					<div class="exp-toggle">▼</div>
+				</div>
+				<div class="exp-details">
+					<div class="exp-content">
+						<ul>
+							<li>Migrated notification system to AWS: Lambda, ECS, DynamoDB, OpenSearch, ElastiCache, Route53, VPC</li>
+							<li>Improved scalability, observability, and reduced infrastructure overhead</li>
+						</ul>
+						<div class="exp-tech">
+							<span>AWS</span>
+							<span>Lambda</span>
+							<span>ECS</span>
+							<span>DynamoDB</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<h2>Projects</h2>
+
+			<div class="item">
+				<div class="item-title">Automated Human-like Call System</div>
+				<div class="item-desc">MVP for AI-powered phone calls using Twilio, OpenAI Whisper, and GPT. Created use-cases for flight booking and payment reminders. Built with Bedrock, OpenAI, Twilio, ElevenLabs.</div>
+			</div>
+
+			<div class="item">
+				<a href="https://github.com/anubhavj99" target="_blank">
+					<div class="item-title">RDFLib QueryBuilder</div>
+				<div class="item-desc">Open source contribution: created a builder pattern for RDF queries, improving developer experience with IDE support.</div>
+				</a>
+			</div>
+		</section>
+
+		<section>
+			<h2>Skills</h2>
+			<div class="skills-grid">
+				<div class="skill-category">
+					<div class="skill-label">Languages</div>
+					<div class="skill-tags">
+						<span class="skill-tag">Java</span>
+						<span class="skill-tag">Python</span>
+						<span class="skill-tag">TypeScript</span>
+					</div>
+				</div>
+				<div class="skill-category">
+					<div class="skill-label">Frontend</div>
+					<div class="skill-tags">
+						<span class="skill-tag">React</span>
+						<span class="skill-tag">Node.js</span>
+						<span class="skill-tag">SSR</span>
+					</div>
+				</div>
+				<div class="skill-category">
+					<div class="skill-label">AWS</div>
+					<div class="skill-tags">
+						<span class="skill-tag">Lambda</span>
+						<span class="skill-tag">ECS</span>
+						<span class="skill-tag">DynamoDB</span>
+						<span class="skill-tag">S3</span>
+						<span class="skill-tag">CloudWatch</span>
+					</div>
+				</div>
+				<div class="skill-category">
+					<div class="skill-label">ML/AI</div>
+					<div class="skill-tags">
+						<span class="skill-tag">SageMaker</span>
+						<span class="skill-tag">Bedrock</span>
+						<span class="skill-tag">LangChain</span>
+					</div>
+				</div>
+				<div class="skill-category">
+					<div class="skill-label">Architecture</div>
+					<div class="skill-tags">
+						<span class="skill-tag">System Design</span>
+						<span class="skill-tag">Microservices</span>
+						<span class="skill-tag">CI/CD</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<h2>Education</h2>
+			<div class="item">
+				<div class="item-title">B.Tech in Computer Science, IIIT Delhi</div>
+				<div class="item-desc">8.47 GPA · 2016 – 2020</div>
+			</div>
+		</section>
+
+		<section>
+			<h2>Recognition</h2>
+			<div class="recognition-grid">
+				<div class="recognition-item">
+					<div class="recognition-icon">
+						<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5C7 4 7 7 7 7" stroke-width="2"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5C17 4 17 7 17 7" stroke-width="2"/><path d="M4 22h16" stroke-width="2"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" stroke-width="2"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" stroke-width="2"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" stroke-width="2"/></svg>
+					</div>
+					<div class="recognition-content">
+						<div class="recognition-title">Customer Obsession Award</div>
+						<div class="recognition-meta">Amazon · 2022 & 2023</div>
+					</div>
+				</div>
+				<div class="recognition-item">
+					<div class="recognition-icon">
+						<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="8" r="6" stroke-width="2"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" stroke-width="2"/></svg>
+					</div>
+					<div class="recognition-content">
+						<div class="recognition-title">Hackathon Winner</div>
+						<div class="recognition-meta">Amazon Transportation Systems · 2022 & 2023</div>
+					</div>
+				</div>
+				<div class="recognition-item">
+					<div class="recognition-icon">
+						<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" stroke-width="2"/></svg>
+					</div>
+					<div class="recognition-content">
+						<div class="recognition-title">Top-Tier Performance</div>
+						<div class="recognition-meta">Exceeds High Bar · 2023-24 & 2024-25</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 	</div>
-<br/><br/><br/><br/><br/>
 </body>
-	<script type="text/javascript">
-		(function(event){
-			window.setTimeout(function(){
-				document.querySelector('.loaderHolder').setAttribute('style', 'display: none');
-				document.querySelector('#mainPageContent').setAttribute('style', 'display: block');
-			}, 2000);
-		})();
-	</script>
 </html>
